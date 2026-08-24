@@ -1,0 +1,801 @@
+product_id,product_name,category,price
+1128,windbreaker,Outdoor Gear,116.42
+1496,Backpack,Accesories,55.66
+1678,Running Socks,Footwear,11.38
+1174,Compression Shirt,Sports Wear,40.74
+1465,Trail Shoes,Footw3ar,136.35
+1763,Gym Shorts, SPORTSWEAR ,31.33
+1225,Sports Bottle, HYDRATION ,13.28
+1026,Gym Shorts,Sports Wear,NaN
+1241,sUNGLASSES,Unknown,48.35
+1063,Running Shoes,Footw3ar,130.84
+1203,bACKPACK,,59.82
+1521,CAP,Accesories,21.9
+1642,Backpack,Accesories,-55
+1108,Sunglasses,accessories,59.06
+1100,,Sports Wear,34.36
+1065,Compression Shirt, SPORTSWEAR ,35.71
+1015,Rain Jacket,Outdoor Gear,89.89
+1502, Gym Shorts , SPORTSWEAR ,NaN
+1668,Sports Bottle,hydration,$15.00
+1098,Gym Shorts,Sports Wear,"30,00"
+1118,Sports Bottle,hydration,$15.00
+1592,Backpack,Accesories,47.92
+1781,Trail Sh0es,Unknown,$140.00
+1162,Gym Shorts,sportswear,26.72
+1008,Running Socks,Fotwear,11.8
+1069,Cap,Access0ries,19.05
+1209,Running Shoes,Fotwear,114.41
+1792,Cap, ACCESSORIES ,19.89
+1629,Running Socks,footwear,11.85
+1714,Cap,Accessories,21.15
+1165,Trail Shoes,Fotwear,134.2
+1106,Sunglasses,Accesories,59.59
+1676,Thermal Hoodie,sportswear,72.42
+1111,Backpack,accessories,53.92
+1085,Windbreaker,outdoor gear,104.09
+1220,Thermal Hoodie,,72.47
+1125,sUNGLASSES, ACCESSORIES ,62.06
+1524,sports bottle,,"15,00"
+1543,Backpack,accessories,52.54
+1748,Running Socks,footwear,13.15
+1110,cAP,accessories,18.94
+1242,sports bottle,N/A,$15.00
+1712,Thermal Hoodie, SPORTSWEAR ,84.62
+1481,Gym Shorts,Sports Wear,32.62
+1695,Rain Jacket,OutdoorGear,78.35
+1646,Cap,accessories,not_a_number
+1135,cAP,accessories,17.3
+1225,Sports Bottle, HYDRATION ,13.28
+1572,Compression Shirt, SPORTSWEAR ,41.72
+1180,tRAIL sHOES,Fotwear,139.02
+1077,Running Socks, FOOTWEAR ,11.91
+1026,gYM sHORTS,sports wear,NaN
+1197,Cap, ACCESSORIES ,20.63
+1003,Running Socks,Footwear,$12.00
+1755,Compression Shirt, SPORTSWEAR ,39.32
+1229,Windbreaker,OutdoorGear,116.12
+1651,Backpack,Accessories,51.3
+1133,,footwear,12.75
+1152,sPORTS bOTTLE,Hydrtion,13.35
+1069,Cap,Access0ries,19.05
+1062,Gym Shorts,Sportwear,29.35
+1241,Sunglasses,Unknown,48.35
+1551,Sports Bottle, HYDRATION ,13.28
+1155,Rain Jacket,Outdoor Gear,90.95
+1190,Sports Bottle,Hydrtion,15.24
+1633,backpack,Accessories,49.27
+1509,COMPRESSION SHIRT,sportswear,39.56
+1188,Thermal Hoodie,Sportwear,69.64
+1219,rUNNING sHOES,footwear,132.51
+1153,SUNGLASSES,Unknown,66.58
+1211,Rain Jacket,outdoor gear,"90,00"
+1451,Sports Bottle,hydration,16.55
+1045,Compression Shirt,Sportwear,39.03
+1142,Windbreaker,,94.11
+1067, rUNNING sOCKS ,,11.76
+1709,Running Socks,footwear,$12.00
+1076,sPORTS bOTTLE,HYDRTION,15.13
+1525,Compression Shirt,Sports Wear,37.23
+1207,cOMPRESSION sHIRT,sportswear,44.19
+1469,Backpack,N/A,58.3
+1092,Gym Sh0rts,Sportswear,32.84
+1609,Windbreaker,outdoor gear,116.61
+1641,, FOOTWEAR ,"140,00"
+1189,Sunglasses,N/A,$60.00
+1059,Trail Shoes,Fotwear,132.66
+1220,tHERMAL hOODIE,,72.47
+1015,rAIN jACKET,Outdoor Gear,89.89
+1033,Cap,Access0ries,"20,00"
+1721,Trail Shoes,Footw3ar,132.86
+1050,Compression Shirt, SPORTSWEAR ,38.23
+1510,rain jacket,outdoor gear,90.31
+1618,Sunglasses,Accesories,58.46
+1069,cAP,Access0ries,19.05
+1615,Gym Shorts,Sportwear,33.0
+1727,Cap,Accessories,$20.00
+1223,rUNNING sOCKS,Footwear,11.82
+1151,Running Socks,Fotwear,12.54
+1686,Compression Shirt,sportswear,40.77
+1115,cOMPRESSION sHIRT, SPORTSWEAR ,39.35
+1037,Thermal Hoodie,sportswear,77.0
+1494,Thermal Hoodie, SPORTSWEAR ,75.16
+1790,Gym Shorts,Sportwear,29.48
+1064,Compression Shirt,Sports Wear,"40,00"
+1070,Cap, ACCESSORIES ,18.55
+1087,GYM SHORTS,Sports Wear,30.75
+1056,Rain Jacket,Outdor Gear,83.85
+1233,Rain Jacket,Outdoor Gear,96.33
+1657,Sports Bottle,Misc,not_a_number
+1079,Compression Shirt, SPORTSWEAR ,40.65
+1655,Running Shoes,footwear,120.86
+1683,Windbreaker,Outdoor Gear,106.27
+1114,gYM sHORTS,Sports Wear,26.55
+1231,Thermal Hoodie,N/A,85.07
+1203,Backpack,,59.82
+1785,Rain Jacket,outdoor gear,97.39
+1499,Thermal Hoodie,,84.7
+1556,Rain Jacket, OUTDOOR GEAR ,89.37
+1223,Running Socks,Footwear,11.82
+1200,Thermal Hoodie, SPORTSWEAR ,80.12
+1216,BACKPACK,accessories,57.35
+1152,Sports Bottle,Hydrtion,13.35
+1154,Windbreaker,Misc,94.05
+1669,Compression Shirt, SPORTSWEAR ,40.87
+1705,Compression Shirt,Sports Wear,39.43
+1209,rUNNING sHOES,Fotwear,114.41
+1503,Windbreaker,OutdoorGear,108.65
+1769,thermal hoodie,Sportwear,73.94
+1620, Backpack ,Accessories,not_a_number
+1245,TRAIL SHOES,footwear,121.23
+1138, Windbreaker ,Outdoor Gear,105.46
+1205,Sports Bottle,hydration,not_a_number
+1708,Backpack, ACCESSORIES ,58.23
+1066,Windbreaker,outdoor gear,$110.00
+1726,Thermal Hoodie, SPORTSWEAR ,69.69
+1174,cOMPRESSION sHIRT,Sp0rts Wear,40.74
+1142,Windbreaker,,94.11
+1167,Cap,accessories,20.52
+1519,Windbreaker,outdoor gear,112.09
+1591,Trail Shoes, FOOTWEAR ,130.27
+1794,Windbreaker,Outdoor Gear,
+1210,bACKPACK,Accesories,49.99
+1102,gYM sHORTS,sportswear,29.85
+1537,Backpack,accessories,60.93
+1796,Gym Shorts,Sportwear,NaN
+1685,Rain Jacket,OutdoorGear,90.62
+1010,tHERMAL hOODIE,Sportswear,59.42
+1048,Rain Jacket,Outdoor Gear,88.63
+1527,Running Shoes,footwear,114.08
+1730,Backpack,Accesories,61.58
+1692,Running Socks,Fotwear,13.54
+1571, Sunglasses ,Access0ries,58.17
+1653,thermal hoodie, SPORTSWEAR ,75.39
+1563,RUNNING SOCKS,,11.14
+1161,tHERMAL hOODIE,Sportwear,68.63
+1095,Windbreaker,Outdor Gear,118.1
+1079,cOMPRESSION sHIRT, SPORTSWEAR ,40.65
+1113,Compression Shirt,sportswear,38.38
+1640,Running Shoes,,105.72
+1151,rUNNING sOCKS,Fotwear,12.54
+1218,Gym Shorts,sportswear,31.15
+1559,COMPRESSION SHIRT, SPORTSWEAR ,36.82
+1060,Sports Bottle,Hydration,14.82
+1091,Thermal Hoodie, SPORTSWEAR ,
+1049,Trail Shoes,Footw3ar,154.32
+1159,Trail Shoes,Fotwear,
+1005,wINDBREAKER,Misc,"110,00"
+1742,Running Shoes,Footwear,114.59
+1584,Running Socks,Sportwear,13.8
+1681,Compression Shirt,Sportwear,34.46
+1208,Backpack,,50.9
+1691,Windbreaker,outdoor gear,112.45
+1235,Running Sh0es,Fotwear,128.61
+1762,Running Shoes,Footw3ar,109.82
+1210,Backpack,Accesories,49.99
+1244,Cap,Accessories,21.27
+1544,Gym Sh0rts,sportswear,"30,00"
+1574,Trail Sh0es,Footwear,133.81
+1229,wINDBREAKER,OutdoorGear,116.12
+1172,Cap,Accesories,19.55
+1140,Windbreaker,OutdoorGear,$110.00
+1217,BACKPACK,Accesories,55.88
+1578,Backpack,Accessories,52.97
+1135,Cap,accessories,17.3
+1558,Sports Bottle,Hydrtion,15.36
+1702,COMPRESSION SHIRT,sportswear,37.19
+1032,Windbreaker,Outdor Gear,not_a_number
+1134,sUNGLASSES,Misc,NaN
+1605,Trail Shoes, FOOTWEAR ,155.25
+1247,rAIN jACKET,Outdor Gear,94.63
+1793,Trail Shoes,Footwear,166.83
+1141,Trail Shoes,Fotwear,122.28
+1182,Windbreaker,outdoor gear,"110,00"
+1616,Running Shoes,Footwear,115.23
+1170,tRAIL sHOES, Unknown ,173.53
+1215,Trail Shoes,Footw3ar,
+1658,Sports Bottle, HYDRATION ,16.04
+1479,Trail Shoes,footwear,133.8
+1146,Sunglasses,Accessories,55.4
+1667,Windbreaker,outdoor gear,90.5
+1546,Backpack,Accessories,"55,00"
+1776,Windbreaker,Outdoor Gear,120.48
+1103,Running Shoes,Footwear,114.34
+1756,Running S0cks,footwear,-12
+1061,Running Shoes,Fotwear,106.45
+1725,Cap,accessories,19.54
+1077,Running Socks, FOOTWEAR ,11.91
+1567,Windbreaker,OutdoorGear,108.13
+1621,Running Socks,Footw3ar,11.32
+1674,Cap,Accesories,18.48
+1199,,Footwear,122.55
+1492,Gym Shorts, SPORTSWEAR ,32.74
+1568, Compression Shirt ,Sportwear,$40.00
+1237,Cap,Sportwear,20.14
+1016,, FOOTWEAR ,142.91
+1693,gym shorts,Sportwear,NaN
+1184,Trail Shoes,Footwear,143.47
+1698,backpack,Access0ries,56.17
+1249,Sports Bottle,Hydrtion,15.66
+1673,Running Socks,,10.26
+1635,Sunglasses,accessories,64.22
+1008,rUNNING sOCKS,Fotwear,11.8
+1012,Windbreaker,Outdoor Gear,102.31
+1247,Rain Jacket,Outdor Gear,94.63
+1235,Running Sh0es,Fotwear,128.61
+1529,Rain Jacket,outdoor gear,91.7
+1062,gYM sHORTS,Sportwear,29.35
+1002,Trail Shoes,Footwear,142.92
+1194,Backpack,Accessories,53.71
+1484,Rain Jacket,outdoor gear,87.02
+1083,Compression Shirt,Sports Wear,41.2
+1573,TRAIL SHOES,footwear,$140.00
+1004,rUNNING s0CKS,Footw3ar,not_a_number
+1127,TRAIL SHOES,footwear,NaN
+1504,Cap, ACCESSORIES ,20.45
+1491,Gym Shorts,sportswear,28.54
+1474,Rain Jacket, OUTDOOR GEAR ,95.74
+1112,Backpack,accessories,54.08
+1192,rAIN jACKET,,96.67
+1485,Backpack,Accesories,59.12
+1477,Backpack,Access0ries,49.1
+1649, Cap ,accessories,"20,00"
+1181,Sunglasses,accessories,67.06
+1718,Backpack,accessories,48.83
+1178,Gym Shorts,Sports Wear,"30,00"
+1131,backpack,Access0ries,51.93
+1082,Compression Shirt,Sportwear,40.52
+1031,Running Socks,Footw3ar,10.52
+1206,Compression Shirt,Sportwear,38.72
+1508,Rain Jacket,OutdoorGear,92.29
+1533,Compression Shirt, SPORTSWEAR ,$40.00
+1186,tHERMAL hOODIE,sports wear,74.04
+1758,Thermal Hoodie,Sportwear,82.76
+1463,Sunglasses,accessories,60.69
+1488,Compression Shirt,Sportwear,NaN
+1013,Running Shoes,Footwear,123.78
+1185,Compression Shirt,Sports Wear,-40
+1092,Gym Sh0rts,Sportswear,32.84
+1665,Running Shoes,footwear,not_a_number
+1025,Cap,Accesories,19.21
+1765,Sports Bottle,,15.91
+1506,Backpack,Sportwear,61.16
+1566,Cap,accessories,20.13
+1075,Backpack, ACCESSORIES ,55.25
+1782,Backpack,accessories,60.22
+1201,sports bottle, HYDRATION ,14.88
+1731,Sports Bottle,Hydrtion,15.35
+1706,Trail Shoes,Footw3ar,136.56
+1778,Running Shoes,Fotwear,94.01
+1237,Cap,Sportwear,20.14
+1549,GYM SHORTS, SPORTSWEAR ,26.82
+1515,Sports Bottle, HYDRATION ,16.79
+1010,Thermal Hoodie,Sportswear,59.42
+1126,Cap,Accessories,20.96
+1666,Windbreaker,Outdoor Gear,107.66
+1010,Thermal Hoodie,Sportswear,59.42
+1480,Running Socks,Footwear,9.43
+1744,Thermal Hoodie,Sports Wear,
+1163,tRAIL sHOES,Footwear,119.36
+1598,Rain Jacket, OUTDOOR GEAR ,"90,00"
+1522,Running Shoes,Footwear,119.56
+1202,Thermal Hoodie,Sportswear,82.29
+1005,Windbreaker,Misc,"110,00"
+1747,C0mpressi0n Shirt,Sportswear,38.61
+1096,gym shorts,Sports Wear,32.92
+1757,Compression Shirt,sportswear,33.37
+1489,Sunglasses,Accesories,62.71
+1087,GYM SHORTS,Sports Wear,30.75
+1746,Backpack,Accesories,"55,00"
+1024,Gym Shorts,Sportwear,25.8
+1540,,Footw3ar,120.81
+1707,running shoes,Footwear,109.81
+1198,Sunglasses,Accesories,60.67
+1787,Trail Shoes, FOOTWEAR ,147.36
+1071,Windbreaker,OutdoorGear,112.39
+1004,Running S0cks,Footw3ar,not_a_number
+1625,Compression Shirt,Sportswear,41.9
+1660,Gym Shorts, SPORTSWEAR ,27.71
+1689,Rain Jacket,outdoor gear,86.35
+1022,rUNNING sOCKS,Footw3ar,12.77
+1116,gYM sH0RTS,Sportwear,28.64
+1799,Backpack,Access0ries,not_a_number
+1783,Sunglasses,Accesories,53.41
+1056,rAIN jACKET,Outdor Gear,83.85
+1071,wINDBREAKER,OutdoorGear,112.39
+1041,rUNNING sHOES, FOOTWEAR ,126.46
+1542,Compression Shirt,Sportswear,33.16
+1175,sPORTS bOTTLE,Hydrtion,16.18
+1593,Running Shoes,Fotwear,115.52
+1187,Sunglasses,Misc,60.96
+1116,Gym Sh0rts,Sportwear,28.64
+1148,,Sportwear,30.73
+1759,Thermal Hoodie,Sportswear,78.61
+1222,,footwear,124.93
+1097,windbreaker,Outdor Gear,93.43
+1595,,footwear,"12,00"
+1774,Gym Shorts,Sports Wear,33.4
+1647,Running Socks, FOOTWEAR ,12.98
+1042,Backpack, ACCESSORIES ,64.89
+1729,Cap,accessories,21.64
+1677,Sunglasses,Accessories,61.23
+1238,Windbreaker,outdoor gear,"110,00"
+1080,Compression Shirt,Sportwear,43.85
+1117,Running Socks,Fotwear,11.67
+1171,Cap,Accessories,20.37
+1070,Cap, ACCESSORIES ,18.55
+1007,TRAIL SHOES,Footw3ar,135.57
+1193,Backpack,Accessories,-55
+1462,Backpack,Unknown,51.39
+1454,Backpack,Accesories,not_a_number
+1051,Sunglasses,Access0ries,61.7
+1453,Running Shoes, FOOTWEAR ,124.76
+1176,Sunglasses,Access0ries,60.11
+1764,Sunglasses,Accesories,58.0
+1175,Sports Bottle,Hydrtion,16.18
+1195,Running Socks,Footwear,13.0
+1224,Running Shoes,Footw3ar,112.35
+1650,RUNNING SOCKS, FOOTWEAR ,10.76
+1156,Running Socks,footwear,13.69
+1179,,outdoor gear,88.0
+1240,Trail Sh0es,footwear,140.65
+1006,Sports Bottle, HYDRATION ,-15
+1094,Cap,accessories,NaN
+1628,Cap, ACCESSORIES ,19.08
+1560,Sports Bottle,hydration,17.14
+1028,tHERMAL hOODIE,sportswear,not_a_number
+1113,cOMPRESSION sHIRT,sportswear,38.38
+1088,bACKPACK,Accesories,61.53
+1017,Compression Shirt,sportswear,35.29
+1670,Trail Shoes,Fotwear,145.33
+1590,Sunglasses,Accesories,57.95
+1589,Running Socks,footwear,10.64
+1750,Cap, ACCESSORIES ,19.98
+1495,Cap, ACCESSORIES ,20.4
+1041,Running Shoes, FOOTWEAR ,126.46
+1456,Backpack,accessories,56.68
+1517,Sports Bottle, HYDRATION ,13.42
+1239,Backpack,Accesories,60.22
+1040,Running Shoes,Misc,115.2
+1664,trail shoes,footwear,129.55
+1250,tHERMAL hOODIE,sportswear,85.31
+1737,Thermal Hoodie, SPORTSWEAR ,80.05
+1460,Gym Shorts,Sportwear,-30
+1232,cAP,N/A,19.49
+1130,Sunglasses,Accesories,67.27
+1090,tHERMAL h00DIE, SPORTSWEAR ,73.6
+1582,Gym Shorts,sportswear,27.81
+1498,Cap, ACCESSORIES ,21.13
+1126,Cap,Accessories,20.96
+1245,TRAIL SHOES,footwear,121.23
+1608,RAIN JACKET,Outdoor Gear,81.83
+1085,wINDBREAKER,outdoor gear,104.09
+1197,cAP, ACCESSORIES ,20.63
+1168,Sports Bottle,Hydration,not_a_number
+1139,Rain Jacket, OUTDOOR GEAR ,107.62
+1246,rUNNING sOCKS,f00twear,11.06
+1101,Rain Jacket, OUTDOOR GEAR ,102.55
+1583,Running Socks,Footw3ar,11.97
+1034,Cap,accessories,19.03
+1134,Sunglasses,Misc,NaN
+1066,wINDBREAKER,outdoor gear,$110.00
+1219,Running Shoes,footwear,132.51
+1638,sports bottle,Hydrtion,NaN
+1193,bACKPACK,Accessories,-55
+1552,Running Socks,footwear,12.28
+1099,Rain Jacket,outdoor gear,91.59
+1155,rAIN jACKET,Outd00r Gear,90.95
+1672,Running Socks,Footwear,
+1617,Backpack,Accesories,62.75
+1046,Gym Shorts,sportswear,27.77
+1156,rUNNING sOCKS,footwear,13.69
+1767,Backpack, ACCESSORIES ,56.72
+1724,Sports Bottle, HYDRATION ,14.97
+1626,Cap,Accesories,19.56
+1530,Sports Bottle,Hydrtion,15.62
+1018,Gym Shorts,Sportswear,"30,00"
+1733,Running Shoes, FOOTWEAR ,122.54
+1124,Rain Jacket,Outdor Gear,90.69
+1645,Backpack,Accessories,57.95
+1777,Trail Sh0es,Fotwear,140.8
+1599,Compression Shirt,Sports Wear,39.05
+1135,Cap,accessories,17.3
+1104,cAP, ACCESSORIES ,18.68
+1743,Cap, ACCESSORIES ,"20,00"
+1186,Thermal Hoodie,Sports Wear,74.04
+1741,Windbreaker,outdoor gear,-110
+1157,Rain Jacket,OutdoorGear,"90,00"
+1627,Cap,Accesories,19.92
+1613,Sunglasses,accessories,55.77
+1017,Compression Shirt,sportswear,35.29
+1472,Windbreaker,outdoor gear,106.61
+1036,tRAIL sHOES,footwear,132.97
+1236,rUNNING sOCKS,Footwear,
+1105,cAP,access0ries,19.92
+1711,Backpack,Accesories,$55.00
+1688,Windbreaker,OutdoorGear,117.81
+1191,Compression Shirt,Sportwear,39.92
+1228,Sports Bottle, HYDRATION ,14.4
+1511,Running Socks,Footw3ar,
+1586,Rain Jacket, OUTDOOR GEAR ,93.12
+1471,Sunglasses,Access0ries,54.7
+1536,Trail Shoes, FOOTWEAR ,138.14
+1612,Trail Shoes,Fotwear,141.81
+1039,Running Socks, FOOTWEAR ,13.6
+1202,Thermal Hoodie,Sportswear,82.29
+1053,Sunglasses,Unknown,57.96
+1029,Trail Shoes, FOOTWEAR ,140.28
+1209,Running Shoes,Fotwear,114.41
+1230,Cap,accessories,20.71
+1084,bACKPACK,accessories,54.0
+1631,Cap,Accesories,20.68
+1198,sUNGLASSES,Accesories,60.67
+1800,Sports Bottle,Hydration,"15,00"
+1607,Sunglasses,Misc,55.39
+1189,sUNGLASSES,N/A,$60.00
+1538,Thermal Hoodie,Sportswear,76.62
+1233,Rain Jacket,Outdoor Gear,96.33
+1104,Cap, ACCESSORIES ,18.68
+1213,Sports Bottle,hydration,16.35
+1467,Running Shoes,Fotwear,124.18
+1131,backpack,Access0ries,51.93
+1147, Compression Shirt ,Sports Wear,39.36
+1513,Sunglasses,Accessories,66.73
+1166,Sunglasses,N/A,67.81
+1213,Sports Bottle,hydration,16.35
+1233,rAIN jACKET,Outdoor Gear,96.33
+1514,Backpack,Access0ries,57.63
+1719,Thermal Hoodie,Sportswear,74.52
+1001,sPORTS bOTTLE, HYDRATION ,15.03
+1122,sunglasses,accessories,48.45
+1570,Gym Shorts,sportswear,NaN
+1520,Rain Jacket,Outdoor Gear,"90,00"
+1076,Sports Bottle,Hydrtion,15.13
+1078,Rain Jacket,outdoor gear,84.86
+1167,cAP,ACCESSORIES,20.52
+1751,running shoes,Fotwear,99.08
+1704,Sports Bottle,Hydration,15.69
+1791, Windbreaker ,Outdoor Gear,103.45
+1076,Sports Bottle,Hydrtion,15.13
+1121,RUNNING SHOES,Footw3ar,123.57
+1768,Windbreaker,Outdor Gear,107.48
+1021,Rain Jacket,outdoor gear,-90
+1603,Windbreaker,Outdoor Gear,108.26
+1057,Gym Shorts,Sportwear,"30,00"
+1610,Trail Shoes,Fotwear,107.48
+1042,bACKPACK, ACCESSORIES ,64.89
+1133,,footwear,12.75
+1158,Cap,accessories,19.15
+1129,cOMPRESSION sHIRT,Sportwear,36.19
+1216,backpack,accessories,57.35
+1772,Running Shoes,Fotwear,124.58
+1475,Sunglasses,Access0ries,55.92
+1531,Thermal Hoodie,Sportswear,71.16
+1154,wINDBREAKER,Misc,94.05
+1661,Cap,Accesories,16.95
+1716,Backpack, ACCESSORIES ,47.22
+1771,Thermal H00die,Sportswear,NaN
+1516,Compression Shirt,Sportswear,44.29
+1723,Sports Bottle,Hydrtion,"15,00"
+1129,Compression Shirt,Sportwear,36.19
+1138, Windbreaker ,Outdoor Gear,105.46
+1736,Gym Shorts,Sportswear,30.14
+1232,Cap,N/A,19.49
+1684,Running Socks,footwear,12.52
+1760,Sunglasses,Accesories,50.99
+1237,cAP,,20.14
+1176,Sunglasses,Access0ries,60.11
+1565,Backpack,Accesories,-55
+1211,Rain Jacket,outdoor gear,"90,00"
+1190,sPORTS bOTTLE,Hydrtion,15.24
+1534,Cap,Accessories,20.08
+1221,tRAIL sHOES,Footwear,145.34
+1648,CAP,accessories,20.4
+1490,BACKPACK, ACCESSORIES ,54.43
+1699,Gym Shorts,sportswear,33.75
+1002,tRAIL sHOES,Footwear,142.92
+1174,Compression Shirt,Sports Wear,40.74
+1006,Sports Bottle, HYDRATION ,-15
+1701,Gym Shorts,Sportswear,29.67
+1103,Running Shoes,Footwear,114.34
+1104,Cap, ACCESSORIES ,18.68
+1636,Gym Shorts,N/A,
+1143,tHERMAL hOODIE,SPORTWEAR,$75.00
+1795,Running Socks,Footw3ar,12.27
+1225,sPORTS bOTTLE, HYDRATION ,13.28
+1141,Trail Shoes,Fotwear,122.28
+1557,Thermal Hoodie,,70.57
+1752,Cap,Access0ries,19.59
+1165,tRAIL sHOES,Fotwear,134.2
+1173,Thermal Hoodie,,NaN
+1703,Trail Shoes,footwear,145.67
+1170,Trail Shoes,Unknown,173.53
+1459,GYM SHORTS, SPORTSWEAR ,27.31
+1132,Thermal Hoodie,N/A,73.04
+1043,Windbreaker,OutdoorGear,95.44
+1606,Gym Shorts,sportswear,not_a_number
+1671,Gym Shorts,sportswear,32.62
+1095,wINDBREAKER,Outdor Gear,118.1
+1611,Sunglasses,Accessories,61.55
+1162,Gym Shorts,sportswear,26.72
+1797,Compression Shirt,Sportswear,39.11
+1550,Backpack,accessories,56.59
+1219,Running Shoes,footwear,132.51
+1115,Compression Shirt, SPORTSWEAR ,39.35
+1575,Thermal Hoodie,Sportswear,77.15
+1142,wINDBREAKER,,94.11
+1470,Windbreaker,outdoor gear,108.18
+1455,Thermal Hoodie,Sportswear,65.83
+1038,Sports Bottle,hydration,13.15
+1062,Gym Shorts,Sportwear,29.35
+1143,Thermal Hoodie,Sportwear,$75.00
+1020,Sunglasses,Misc,not_a_number
+1545,Backpack,Accesories,52.78
+1476,Windbreaker,Outdoor Gear,118.12
+1190,Sports Bottle,Hydrtion,15.24
+1171,Cap,Accessories,20.37
+1110,Cap,accessories,18.94
+1035,Sunglasses,Access0ries,53.31
+1201,SPORTS BOTTLE, HYDRATION ,14.88
+1483,Thermal Hoodie, SPORTSWEAR ,71.47
+1098,gYM sHORTS,Sports Wear,"30,00"
+1033,Cap,Access0ries,"20,00"
+1163,Trail Shoes,Footwear,119.36
+1023,Sports Bottle,Hydrtion,"15,00"
+1634,Compression Shirt,sportswear,42.11
+1601,Sports Bottle,Hydrtion,13.41
+1185,cOMPRESSION sHIRT,Sports Wear,-40
+1518,Running Socks,footwear,11.32
+1234,Sunglasses,Access0ries,55.5
+1169,Trail Shoes, FOOTWEAR ,147.82
+1780,Backpack,Sportwear,57.07
+1036,Trail Shoes,footwear,132.97
+1226,Thermal Hoodie,Sportwear,66.77
+1234,sUNGLASSES,access0ries,55.5
+1700,Windbreaker,Outdor Gear,111.44
+1020,sUNGLASSES,Misc,not_a_number
+1027,Backpack,Access0ries,50.56
+1114,Gym Shorts,Sports Wear,26.55
+1548,Running Socks,Footw3ar,11.55
+1063,rUNNING sHOES,Footw3ar,130.84
+1144, Running Shoes ,Footwear,123.63
+1478,Cap,Access0ries,
+1168,sPORTS bOTTLE,Hydration,not_a_number
+1532,Thermal Hoodie, SPORTSWEAR ,84.78
+1199,,Footwear,122.55
+1160,Sports Bottle,Hydration,16.17
+1074,Rain Jacket, OUTDOOR GEAR ,78.55
+1050,Compression Shirt, SPORTSWEAR ,38.23
+1075,bACKPACK, ACCESSORIES ,55.25
+1009,Backpack,Accesories,49.4
+1745,Thermal Hoodie,sportswear,82.89
+1177,Rain Jacket,outdoor gear,92.35
+1523,, SPORTSWEAR ,44.19
+1770,Gym Shorts, SPORTSWEAR ,28.16
+1766,,,20.81
+1052,sPORTS bOTTLE,hydration,14.47
+1585,Backpack,accessories,57.85
+1067, Running Socks ,,11.76
+1030,cOMPRESSION sHIRT,Sportwear,39.61
+1775,Windbreaker,Outdor Gear,99.17
+1112,Backpack,accessories,54.08
+1054,Backpack, ACCESSORIES ,56.0
+1732,Rain Jacket,Outdoor Gear,$90.00
+1011,rUNNING sOCKS,Footw3ar,12.28
+1065,Compression Shirt, SPORTSWEAR ,35.71
+1001,Sports Bottle, HYDRATION ,15.03
+1052,Sports Bottle,hydration,14.47
+1204,cAP,accessories,20.21
+1632,Thermal Hoodie,Sports Wear,82.19
+1204,Cap,accessories,20.21
+1160,sPORTS bOTTLE,Hydration,16.17
+1081,Sunglasses,Accesories,60.4
+1099,Rain Jacket,outdoor gear,91.59
+1720,Sports Bottle,hydration,15.24
+1172,Cap,Accesories,19.55
+1246,Running Socks,footwear,11.06
+1109,Compression Shirt,Unknown,$40.00
+1526,Gym Shorts,sportswear,NaN
+1001,Sports Bottle, HYDRATION ,15.03
+1125,Sunglasses, ACCESSORIES ,62.06
+1587,Gym Shorts,Sportwear,28.05
+1623,Sunglasses,Access0ries,57.8
+1159,tRAIL sHOES,FOTWEAR,
+1120,SUNGLASSES,Accessories,62.81
+1604, Sunglasses ,,59.13
+1735,Rain Jacket, OUTDOOR GEAR ,87.49
+1130,sUNGLASSES,Accesories,67.27
+1501,Backpack, ACCESSORIES ,
+1019,Running Shoes,Footw3ar,-120
+1562,Rain Jacket,outdoor gear,$90.00
+1588,Trail Shoes,Fotwear,150.0
+1031,rUNNING sOCKS,Footw3ar,10.52
+1644,Gym Shorts,sportswear,$30.00
+1034,cAP,accessories,19.03
+1156,Running Socks,footwear,13.69
+1553,Trail Shoes,Misc,144.45
+1221,Trail Shoes,Footwear,145.34
+1164,Running Socks,Footw3ar,"12,00"
+1119, Windbreaker ,Outdor Gear,100.93
+1018,gYM sHORTS,Sportswear,"30,00"
+1232,Cap,N/A,19.49
+1168,Sports Bottle,Hydration,not_a_number
+1137,thermal hoodie, SPORTSWEAR ,71.23
+1639,Sunglasses,Access0ries,56.57
+1749,Sports Bottle,hydration,15.25
+1064,Compression Shirt,Sports Wear,"40,00"
+1652,Running S0cks,Fotwear,11.38
+1722,Trail Shoes,Unknown,156.07
+1180,Trail Shoes,Fotwear,139.02
+1680,Gym Shorts, SPORTSWEAR ,30.89
+1569,Trail Shoes,,139.79
+1215,Trail Shoes,Footw3ar,
+1084,Backpack,accessories,54.0
+1016,, FOOTWEAR ,142.91
+1183,Sports Bottle,Hydration,14.43
+1614,Thermal Hoodie, SPORTSWEAR ,75.77
+1161,Thermal Hoodie,Sportwear,68.63
+1093,Compression Shirt,Unknown,
+1072,Rain Jacket, OUTDOOR GEAR ,89.97
+1619,Running Socks,Sportwear,9.94
+1694,Rain Jacket,Outdoor Gear,"90,00"
+1150,Thermal Hoodie,Sports Wear,73.57
+1013,Running Shoes,Footwear,123.78
+1079,Compression Shirt, SPORTSWEAR ,40.65
+1663,windbreaker,Outdoor Gear,
+1581,Thermal Hoodie,Sportwear,79.62
+1096,gym shorts,Sports Wear,32.92
+1194,bACKPACK,ACCESSORIES,53.71
+1679,Backpack,Accesories,49.84
+1202,tHERMAL hOODIE,Sportswear,82.29
+1452,Sunglasses, ACCESSORIES ,55.01
+1149,Trail Shoes,Footwear,not_a_number
+1167,Cap,accessories,20.52
+1594,Gym Shorts,Sportwear,30.33
+1164,Running Socks,Footw3ar,"12,00"
+1138, wINDBREAKER ,Outdoor Gear,105.46
+1019,Running Shoes,Footw3ar,-120
+1102,Gym Shorts,sportswear,29.85
+1180,Trail Shoes,Fotwear,139.02
+1554,Gym Shorts,sportswear,29.34
+1728,Windbreaker, OUTDOOR GEAR ,94.92
+1123,Cap, ACCESSORIES ,21.54
+1487,Sports Bottle,hydration,
+1086,Running Socks,Footw3ar,$12.00
+1183,Sports Bottle,Hydration,14.43
+1207,Compression Shirt,sportswear,44.19
+1675,Trail Shoes,footwear,135.97
+1097,WINDBREAKER,Outdor Gear,93.43
+1105,Cap,Access0ries,19.92
+1214,Compression Shirt,Sports Wear,-40
+1058,Trail Shoes,Footwear,130.58
+1555, Sports Bottle ,hydration,13.27
+1028,Thermal Hoodie,sportswear,not_a_number
+1015,Rain Jacket,Outdoor Gear,89.89
+1150,Thermal Hoodie,Sports Wear,73.57
+1486,Rain Jacket,Sportwear,90.83
+1047,Gym Shorts,Sportwear,32.67
+1457,Trail Shoes,,"140,00"
+1505,Thermal Hoodie,Sportswear,70.87
+1602,Rain Jacket,OutdoorGear,98.31
+1512,gym shorts,Sportswear,29.68
+1068,Backpack,Access0ries,62.76
+1690,Backpack,Accessories,59.2
+1107,Running Shoes,footwear,124.14
+1637,Windbreaker,Outdor Gear,120.54
+1654,Compression Shirt,Sports Wear,39.99
+1500,trail shoes,Footw3ar,132.67
+1044,RUNNING SOCKS,Fotwear,11.54
+1122,sunglasses,accessories,48.45
+1696,Running Shoes,footwear,121.11
+1162,gYM sHORTS,,26.72
+1222,,footwear,124.93
+1212,Sunglasses,Access0ries,57.48
+1014,gYM sHORTS, SPORTSWEAR ,32.24
+1798,RAIN JACKET,outdoor gear,$90.00
+1227,Rain Jacket,Outdoor Gear,NaN
+1099,rAIN jACKET,outdoor gear,91.59
+1597,Trail Shoes,footwear,NaN
+1630,Compression Shirt,Sports Wear,38.55
+1753,Cap,accessories,17.43
+1173,Thermal Hoodie,,NaN
+1243,Gym Shorts,sportswear,32.1
+1163,Trail Shoes,Footwear,119.36
+1734,Rain Jacket,,79.7
+1493,Trail Shoes, FOOTWEAR ,155.22
+1458,Running Socks, FOOTWEAR ,13.56
+1682,Backpack,Accesories,55.07
+1043,Windbreaker,OutdoorGear,95.44
+1464,Rain Jacket,outdoor gear,$90.00
+1710,Gym Shorts,Sportwear,29.86
+1528,Running Socks,Fotwear,11.87
+1754,Sports Bottle,hydration,14.54
+1248,Windbreaker,Outdor Gear,-110
+1659,Rain Jacket, OUTDOOR GEAR ,77.52
+1473,,Footw3ar,121.39
+1786,Windbreaker,OutdoorGear,"110,00"
+1789,Sports Bottle,hydration,15.08
+1779,Sunglasses,accessories,67.07
+1113,Compression Shirt,sportswear,38.38
+1096,GYM SHORTS,Sports Wear,32.92
+1497,Rain Jacket, OUTDOOR GEAR ,84.18
+1656,Backpack,accessories,59.4
+1788,trail shoes,Unknown,-140
+1236,Running Socks,Footwear,
+1089,Sports Bottle, HYDRATION ,15.78
+1234,Sunglasses,Access0ries,55.5
+1136,Running Shoes,Footwear,133.6
+1022,Running Socks,Footw3ar,12.77
+1541,Backpack,Accesories,49.67
+1195,Running Socks,Footwear,13.0
+1740,Backpack,accessories,54.11
+1643,Rain Jacket,outdoor gear,86.62
+1482,Running Socks,Footwear,10.21
+1145,Gym Shorts,,27.54
+1217,BACKPACK,Accesories,55.88
+1738,Windbreaker,OutdoorGear,115.86
+1127,trail shoes, footwear ,NaN
+1137,THERMAL HOODIE, SPORTSWEAR ,71.23
+1596,BACKPACK,Access0ries,58.33
+1507,Cap,Access0ries,18.94
+1622,Backpack,N/A,61.77
+1579,Rain Jacket,Outdor Gear,91.63
+1461,Thermal Hoodie,Unknown,82.82
+1016,, FOOTWEAR ,142.91
+1761,Compression Shirt, SPORTSWEAR ,40.9
+1107,Running Shoes,footwear,124.14
+1132,tHERMAL hOODIE,N/A,73.04
+1011,Running Socks,Footw3ar,12.28
+1250,Thermal Hoodie,sportswear,85.31
+1119, Windbreaker ,Outdor Gear,100.93
+1697,Thermal Hoodie, SPORTSWEAR ,75.26
+1101,Rain Jacket, OUTDOOR GEAR ,102.55
+1784,Compression Shirt,Sports Wear,NaN
+1624, Cap ,Unknown,22.91
+1049,Trail Shoes,Footw3ar,154.32
+1127,TRAIL SHOES,footwear,NaN
+1044,running socks,Fotwear,11.54
+1739,Thermal Hoodie,Sportwear,74.41
+1717,Sports Bottle,Hydration,15.61
+1056,Rain Jacket,Outdor Gear,83.85
+1713,windbreaker,Outdoor Gear,129.31
+1183,sPORTS bOTTLE,Hydration,14.43
+1082,Compression Shirt,Sportwear,40.52
+1039,Running Socks, FOOTWEAR ,13.6
+1212,sUNGLASSES,access0ries,57.48
+1192,Rain Jacket,outdoor gear,96.67
+1468,Running Socks,footwear,10.85
+1564,Backpack,Accesories,52.39
+1088,Backpack,Accesories,61.53
+1577,Sports Bottle,Hydrtion,15.64
+1600,Backpack,Access0ries,51.52
+1196,Compression Shirt,Sportwear,44.55
+1466,Compression Shirt,Sportwear,36.92
+1123,cAP, ACCESSORIES ,21.54
+1068,bACKPACK,Access0ries,62.76
+1088,Backpack,Accesories,61.53
+1034,Cap,accessories,19.03
+1208,bACKPACK,,50.9
+1662,Sunglasses,Misc,59.85
+1201,SPORTS BOTTLE, HYDRATION ,14.88
+1148,,Sportwear,30.73
+1773,Trail Shoes,N/A,147.94
+1169,tRAIL sHOES, FOOTWEAR ,147.82
+1561,Compression Shirt,,40.35
+1055,Trail Shoes,Footw3ar,146.49
+1032,Windbreaker,Outdor Gear,not_a_number
+1576,Trail Shoes,Fotwear,$140.00
+1144, Running Shoes ,Footwear,123.63
+1715,Thermal Hoodie,Sportswear,73.62
+1687,Gym Shorts,Misc,23.97
+1539,Trail Shoes,Fotwear,
+1226,Thermal Hoodie,Sportwear,66.77
+1547,Trail Shoes,footwear,133.84
+1535,Sports Bottle,Hydration,14.67
+1061,rUNNING sHOES,Fotwear,106.45
+1014,Gym Shorts, SPORTSWEAR ,32.24
+1090,Thermal H00die, SPORTSWEAR ,73.6
+1031,Running Socks,Footw3ar,10.52
+1073,Cap,Access0ries,21.37
+1580,Trail Shoes,Footw3ar,154.65
+1030,Compression Shirt,Sportwear,39.61

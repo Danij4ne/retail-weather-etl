@@ -1,0 +1,821 @@
+customer_id,first_name,last_name,city,signup_date
+660,Daniel,MARTINEZ,,2024-06-11
+704,Mateo,Smith,mad rid,2024-10-21
+560,Leo,Muller,Madrid,2024-10-21
+79,Maria,Martinez,Madríd,2024-07-25
+159,Carlos,Diaz,Barcel0na,2024-12-06
+422,Noah,Rossi,Barcel0na,2024-06-29
+158,Marta,Muller,Madríd,2024-08-30
+416,Julia,Romero,Barcelóna,2024-06-06
+450,Liam,Brown,barcelona,
+617,Daniel,Martinez,mADRÍD,2024-12-23
+131,Sofia,Lopez,Madird,2024-08-01
+188,Sofia,Lopez,Madríd,2024-11-02
+256,,Gonzalez,Barcelóna,2024-12-07
+299,SARA,Silva,mADIRD,2024-10-27
+673,David,Navarro,barcelona,2024-11-14
+443,Anna,Martinez,Madird,2024-11-03
+637,Nina,Sanchez,mad rid,2024-07-28
+329,Olivia,Diaz, BARCELONA,2024-09-01
+225,Alex,Dubois,BARCELONA ,2024-12-14
+667,Lucas,RODRIGUEZ,,2024-07-13
+267,Anna,Muller,Madrid,2024-07-16
+431,David,Gonzalez,Madird,2024-08-16
+254,Mateo,Sanchez,barcelona,20240610
+33,David,MULLER,Barcelona,2024-06-05
+571,Hugo,NAVARRO,bar celona,2024-12-30
+210,Sara,NAVARRO,Barcelona,2024-12-18
+37,Julia,Smith,barcelona,
+464,Maria,Silva,mad rid,2024-11-15
+691,Mateo,Smith,madrid,2024-08-25
+128,Carlos,Gonzalez,Barcel0na,2024-08-02
+431,David,Gonzalez,Madird,2024-08-16
+340,Nina,Rodriguez,Barcelona,2024-11-26
+162,Maria,Torres,Madrid,2024-07-20
+164,Liam,Silva,bar celona,20240903
+505,Mateo,,,not_a_date
+664,Sofia,lopez, MADRID ,not_a_date
+384, Liam ,Muller,madrid,2024-07-07
+404,,Perez,bar celona,2024-11-24
+692,Noah,Lopez,barcelona,2024-07-05
+479,David,Sanchez,BARCELONA ,2024-12-25
+688,Emma,Costa, BARCELONA,not_a_date
+353,Lucas,Martinez,mad rid,2024-12-21
+717,John,Navarro,barcelona,2024-06-27
+73,julia,Muller, BARCELONA,2024-06-15
+385,Julia,Sanchez,Barcelóna,2024-09-30
+81,Leo,Navarro,Madird,2024-11-02
+423,Maria,Vega,Barcelona,2024-09-09
+298,Julia,Wilson,,2024-07-27
+279,Sofia,Gonzalez,MaDrId,2024-09-27
+545,alex,Rossi,Barcel0na,2024-07-12
+508, Sara ,Sanchez,bar celona,2024-08-08
+613,Julia,Rossi,Madrid,2024-08-06
+6,Nina,Costa, BARCELONA,2024-10-19
+606,John,Silva,Barcel0na,2024-07-04
+236,Maria,Rossi,BARCELONA ,2024-09-15
+616,Anna,Wilson,bar celona,2024-10-30
+618,Noah,Martinez,mad rid,2024-10-13
+259,David, Wilson ,,
+369,David,Costa,BARCELONA ,2024-07-18
+129,Olivia,,Barcel0na,2024-08-17
+716,,Gonzalez,MaDrId,2024-07-24
+461,Noah,Rodriguez,barcelona,2024-08-12
+126,Emma,Rossi,Madird,2024-09-04
+393, Anna ,,Madríd,
+68,Nina,Romero,Barcelóna,2024-07-29
+498,Mateo,Costa, BARCELONA,2024-06-18
+191,Sofia,Vega,bar celona,2024-06-29
+402,Daniel,Gonzalez,BARCELONA ,2024-12-28
+580,John,Martinez, BARCELONA,2024-12-25
+185,Anna,TORRES,mad rid,2024-10-29
+323,Hugo,Gonzalez,Barcelóna,2024-06-07
+227,carlos,Sanchez,Madríd,2024-07-27
+398,Mateo,Vega, BARCELONA,2024-06-03
+101,Nina,Rossi,bARCELÓNA,2024-08-11
+607,MATEO, Navarro ,barcelona,2024-09-01
+161,Mateo,Wilson,Madrid,2024-07-22
+272,Maria,Costa,BARCELONA ,2024-10-26
+400,Daniel,Romero,Madird,2024-06-24
+301,Liam,Rodriguez,BARCELONA ,2024/08/19
+103,John,Rossi,bar celona,2024-09-21
+499,Maria,Navarro,Madríd,2024-12-03
+134,Hugo,Garcia, MADRID ,2024-08-26
+183,Lucas,Rossi,Madrid,2024-08-12
+546,Leo,Rodriguez,Barcelóna,2024-06-17
+288,Olivia,Smith,Barcelona,2024-08-21
+471,Leo, Rodriguez ,MaDrId,2024-07-10
+38,John,Sanchez,BARCELONA ,2024-11-15
+556,Liam,Diaz, MADRID ,
+641,Noah,Sanchez,Barcel0na,2024-07-19
+172,Sofia,Garcia,barcelona,2024-07-15
+186,Noah,Lopez, BARCELONA,2024-09-29
+652,Nina,Torres,MaDrId,2024-11-15
+117,Hugo,Perez, BARCELONA,2024-11-17
+157,Alex,Dubois, BARCELONA,2024-10-08
+432,Mateo,Gonzalez,,2024-10-16
+18,Carlos,Brown,MaDrId,2024-07-30
+193,Nina,Muller,bar celona,2024-06-01
+356,Lucas, Torres ,MAD RID,2024-09-17
+574,Sara,Muller,Barcel0na,2024-08-27
+602,John,Martinez, BARCELONA,2024-11-18
+558,Sara,Lopez,Barcel0na,2024-12-15
+584,Sara,Vega,madrid,2024-07-29
+593,Noah,Smith, BARCELONA,2024/10/15
+472,Hugo,Diaz,Madrid,not_a_date
+535,Anna,Gonzalez,barcelona,2024-08-21
+54,JULIA,Brown,madrid,2024-08-06
+666,Maria,Perez,MaDrId,
+150,Noah,Brown,barcelona,2024-06-23
+642,Emma,Vega,Barcelóna,2024-09-16
+587,Leo,LOPEZ, BARCELONA,2024-10-28
+92,Lucas,Rossi,Madird,2024-10-20
+378,Noah,Martinez,Barcelona,2024-06-05
+526,Maria,Lopez,Barcelóna,20241125
+201,Nina,Wilson,Madríd,2024-10-25
+471,Leo, Rodriguez ,MaDrId,2024-07-10
+669,Marta,Brown, MADRID ,not_a_date
+408,Alex,Gonzalez,mad rid,2024-08-17
+541,,Navarro,mad rid,2024-09-15
+394,Alex,Wilson,MaDrId,20241221
+641,Noah,Sanchez,bARCEL0NA,2024-07-19
+17,Julia,Perez,Madird,2024-10-13
+619,Julia,Vega,Barcelóna,2024-12-11
+625,Leo,Smith,MaDrId,2024-12-30
+386,Alex,Sanchez,Barcelona,2024-08-06
+686,Anna,Vega,bar celona,2024-07-05
+552,ANNA,Diaz,bar celona,2024-07-06
+288,Olivia,Smith,Barcelona,2024-08-21
+170,David,wilson, BARCELONA,2024-06-01
+70,Mateo,Navarro,bar celona,2024-11-06
+1,David,Perez,mad rid,2024/11/18
+51,MATEO,COSTA,BARCELONA ,2024-09-08
+660,Daniel,MARTINEZ,,2024-06-11
+682,Emma,Wilson,mad rid,2024-10-30
+594,sofia,Dubois,Madríd,2024-11-28
+86,Hugo,Navarro,Madríd,2024-09-22
+270,Emma,Brown,BARCELONA ,2024-08-22
+348,Marta,Brown,,2024-07-22
+16,liam,Navarro,Madird,2024-11-02
+425,Liam,DUBOIS,madrid,2024-07-04
+22,Liam,lopez,bARCELONA,2024-10-22
+342,Daniel,Perez,barcelona ,2024-06-28
+116,Daniel,Diaz,bar celona,2024-11-04
+243,Nina,Sanchez,MaDrId,2024-12-03
+538,David,Navarro, BARCELONA,2024-10-19
+621,sara,Lopez,mad rid,2024-08-20
+351,Mateo,Smith,bar celona,2024-11-04
+359,Emma,Martinez,MaDrId,not_a_date
+34,Sofia,Dubois,Madird,2024-07-31
+39,Marta,Wilson,barcelona,2024-09-29
+565,Daniel,Torres,Madríd,2024-10-23
+452,Marta,Romero,Barcel0na,2024-12-20
+534,Liam, Muller ,BARCELONA ,not_a_date
+497,Mateo,Brown,madrid,2024-09-21
+700,Liam,Brown,Barcelona,
+666,Maria,Perez,MaDrId,
+678,Emma,Torres,Barcelona,20240720
+486,Sara,WILSON,Barcelona,2024-08-15
+137,LIAM,, MADRID ,2024-09-21
+173,Julia,Vega,madrid,2024-09-12
+224,Nina,Dubois,bar celona,2024-06-03
+718,Lucas,Torres,MAD RID,2024-12-12
+316,Carlos, Costa , BARCELONA,2024-08-03
+28,Noah,Brown,madrid,2024-12-08
+161,Mateo,Wilson,mADRID,2024-07-22
+164,Liam,Silva,bar celona,20240903
+426,David,Rossi,Barcelona,2024-08-14
+363,Leo,silva,Madríd,2024-07-14
+112,Noah,Garcia,,2024-07-21
+25,David,Diaz, BARCELONA,2024-08-12
+78,David,Gonzalez,Madríd,2024-09-15
+711,Alex,Romero,Barcel0na,2024-11-01
+180,Olivia,Silva,MaDrId,2024-08-04
+693,Hugo,Vega,,2024-08-15
+691,Mateo,Smith,MADRID,2024-08-25
+107,Hugo,Silva,Madríd,2024-12-27
+449,Maria,Torres,Madríd,2024-12-06
+687,Mateo,Garcia, MADRID ,2024-07-05
+7,,,Barcelona,2024/12/15
+630,Anna,Garcia,,2024-06-11
+406,Carlos,Rossi,mad rid,2024-12-24
+234,Olivia,Rodriguez,BARCELONA ,2024-07-30
+419,Leo,Dubois,madrid,2024-09-11
+608,Olivia,Torres,Madrid,2024-12-11
+115,John,Wilson, MADRID ,2024-08-04
+285,Sara,Vega,,2024-06-15
+175,Hugo,Brown,barcelona,2024-08-28
+559,Anna,Silva,madrid,2024-07-13
+629, Leo ,Smith,Barcel0na,2024-12-20
+187,Nina,garcia,Madríd,2024-08-12
+640,Sara,Costa, MADRID ,2024-09-27
+572,Emma,Wilson,Barcelona,2024-10-21
+327,Carlos,Sanchez,mad rid,2024-11-01
+76,Alex,Sanchez,bar celona,2024-11-15
+177,Noah,Brown,MaDrId,2024/12/24
+465,Olivia,Muller, BARCELONA,2024-10-31
+154,Sara,Dubois,madrid,2024-06-17
+575,Sara,Navarro,Barcelóna,2024-07-16
+299,SARA,Silva,Madird,2024-10-27
+3,John,rodriguez,Barcelóna,2024-11-16
+199,Julia,Wilson,Madríd,2024-11-06
+141,Hugo,Garcia,Madird,2024-07-06
+252,Sara,Rossi,Madríd,20240924
+65,Alex,Gonzalez,bARCELÓNA,2024-10-14
+258,Mateo,Sanchez,Barcelona,2024-09-20
+701,Alex,SMITH,Madríd,2024-11-27
+451,Sofia,Silva,mad rid,
+564,Sara,Brown, MADRID ,2024-10-23
+138,Marta,sanchez,Barcelona,2024-12-21
+245,Lucas,Torres,,2024/10/17
+13,Olivia,Muller,MaDrId,2024-07-07
+249,Mateo,Silva,Barcel0na,2024-11-20
+46,DANIEL,Torres,mad rid,2024-08-03
+41,Noah,Rodriguez,Barcelóna,2024-11-09
+676,Leo,Muller,BARCELONA ,2024-10-30
+308,David,Garcia,mAdRiD,2024-07-23
+195,Noah,Muller,Barcelona,2024-09-24
+553,Daniel,Torres, barcelona,2024-10-24
+522,Julia,Martinez, BARCELONA,2024-11-13
+44,Leo,Costa,BARCELONA,2024-06-21
+567,Leo,Romero,Barcelona,2024-08-14
+663,ALEX,Brown,Barcel0na,2024-12-07
+513,mateo,Rossi,BARCELONA ,2024-09-25
+441,Olivia,Sanchez,Barcelóna,2024-06-26
+390,,Wilson,Madríd,2024-09-18
+650,David,Martinez,Madird,2024-08-21
+366,Maria,Torres,Madríd,2024-09-25
+570,JULIA,Costa,Madird,2024-11-23
+297,Lucas,VEGA,barcelona,2024/11/17
+319,Mateo,Smith,barcelona,2024-12-09
+235,Nina,Wilson,mad rid,2024-10-30
+358,Alex,Costa,Madird,2024-12-05
+484,Daniel,Vega,Barcelona,2024-11-21
+152,Carlos,Garcia,Barcelona,2024-07-01
+566,,Rodriguez,,2024-06-09
+194, Alex ,Silva,Madríd,2024-08-22
+561,Carlos,Rossi, BARCELONA,2024-09-28
+48,John,Costa,Barcelóna,2024-09-03
+5,David,Dubois,barcelona,2024-09-23
+77,Maria,Martinez,MaDrId,2024-09-07
+326,David,Sanchez,Madird,2024-10-26
+214,Sara,Garcia,Barcel0na,2024-10-18
+441,Olivia,Sanchez,Barcelóna,2024-06-26
+628,John,Smith,bar celona,2024-06-11
+418,Emma,Gonzalez,BARCELONA ,not_a_date
+579,David,Brown,madrid,2024-11-27
+85,Sara,Sanchez,BARCELONA ,2024-10-22
+357,Carlos,Dubois,Madríd,2024-10-23
+391,Julia,Diaz,Madríd,2024-07-01
+328,Mateo, Muller ,Madríd,2024-09-06
+371,Maria,Silva,Barcelona,2024-07-20
+162,Maria,Torres,Madrid,2024-07-20
+91,Alex,Wilson,BARCELONA ,2024-11-23
+281,Liam,Martinez,bar celona,2024-10-14
+108,JULIA,Vega,MaDrId,2024-09-28
+690,Marta,Gonzalez,BARCELONA ,2024-06-04
+708,Daniel,Sanchez, BARCELONA,2024-11-16
+176,David,Diaz,Barcelona,2024-08-23
+581,mateo,Muller,Barcelona,2024-12-31
+230,Anna,Martinez,barcelona ,2024-08-16
+447,Alex,Diaz,mad rid,2024-12-15
+82,Mateo,Brown,Barcelóna,2024-06-13
+181,David,Muller,bar celona,2024-07-04
+523,Nina,Martinez,MaDrId,2024-09-19
+548,Sara,Torres,bar celona,2024-09-10
+428,Olivia,Diaz,Madird,2024-06-17
+219, Marta ,Gonzalez,mADIRD,2024-11-03
+71,,Rodriguez,Barcel0na,2024-07-10
+21,Noah,Smith,mad rid,2024-09-09
+647,Sofia,Costa,Madríd,2024-12-31
+90,emma,Silva,Barcel0na,2024-06-06
+305,Olivia, Silva ,barcelona,2024-06-05
+102,Noah,Garcia,Barcelóna,2024-12-04
+677,Julia, Muller ,Madríd,2024-10-08
+300,Sofia,Silva,Madrid,2024-10-20
+226,Emma,Martinez, BARCELONA,2024-11-07
+182,Sofia,Navarro,,2024-12-25
+65,Alex,Gonzalez,Barcelóna,2024-10-14
+314,Liam,Diaz, BARCELONA,
+1,David,Perez,mad rid,2024/11/18
+706,Marta,Brown, MADRID ,2024-09-01
+696,Sara,Navarro,Barcelóna,2024-11-04
+573,Hugo, Lopez ,madrid,2024-06-13
+612,Hugo,Costa,madrid,2024-09-20
+648,maria,Gonzalez,Madrid,2024-07-29
+702,Lucas,,MaDrId,2024-08-04
+338,Hugo,Smith,Barcel0na,2024-11-16
+638,Nina,Navarro,BARCELONA ,not_a_date
+341,John,Martinez, MADRID ,20240908
+230,Anna,Martinez,BARCELONA ,2024-08-16
+365,Emma,Dubois,Madird,20241220
+233,Noah,Brown,MaDrId,2024-07-16
+460,Marta,Navarro, BARCELONA,2024-06-11
+36,Lucas,Sanchez,BARCELONA ,2024-07-02
+399,Anna,Vega, BARCELONA,2024-11-09
+308,David,Garcia,MaDrId,2024-07-23
+519,LEO,Lopez,BARCELONA ,
+598,Liam,Costa,madrid,2024-08-09
+81,Leo,Navarro,mADIRD,2024-11-02
+202,John,Diaz,BARCELONA ,2024-08-08
+563,Sofia,Perez,mad rid,not_a_date
+492,Anna,Romero, BARCELONA,2024-06-30
+474,Maria,Muller,Barcelóna,2024-07-09
+672,HUGO,Romero,barcelona,2024-10-26
+169,Carlos,Smith,Madird,2024-10-07
+525,Daniel,Vega,Madird,2024-12-15
+291,Olivia,Smith,,2024-09-01
+631,Anna,Rodriguez,Barcel0na,2024-10-22
+486,Sara,WILSON,bARCELONA,2024-08-15
+226,Emma,Martinez, BARCELONA,2024-11-07
+516,Marta,Diaz,MaDrId,2024-06-08
+273,Leo,Sanchez,barcelona,2024-06-06
+381,Noah,Muller,bar celona,2024-11-27
+472,Hugo,Diaz,Madrid,not_a_date
+148,Carlos,Martinez,barcelona,2024-11-26
+670,Carlos,Rodriguez,BARCELONA ,2024-06-28
+145,Mateo,VEGA,barcelona,2024-11-08
+289,,smith, BARCELONA,2024-07-19
+24,David,Rodriguez,madrid,20240819
+198,Olivia,SANCHEZ,madrid,2024-06-16
+11,Julia,Smith,Madríd,2024-11-25
+50,Anna,Perez, MADRID ,2024-12-01
+251,Alex,Wilson,Madrid,2024-11-09
+401,John,Muller,bar celona,2024-06-10
+347,EMMA,Diaz,Barcelóna,2024-12-16
+671,Hugo,Rossi,,2024-06-11
+629, Leo ,Smith,Barcel0na,2024-12-20
+276,,Romero, MADRID ,2024-11-15
+446,Liam,Sanchez,bar celona,2024-10-08
+111,Alex,Romero,Madríd,2024-07-05
+354,nina,Muller,bar celona,2024-08-27
+221,Nina,Wilson,madrid,2024-09-05
+661,Emma,Navarro,Madrid,2024-06-28
+476,Daniel,dubois,Madríd,2024-07-15
+313,John,Dubois,Barcelona,2024-10-10
+330,Hugo,Costa,BARCELONA ,2024-09-07
+475,Alex,Lopez,Madird,2024-12-12
+711,Alex,Romero,bARCEL0NA,2024-11-01
+427,,Costa,BARCELONA ,2024-06-11
+520,MARIA,Rodriguez,Barcel0na,2024-08-05
+701,Alex,SMITH,Madríd,2024-11-27
+528,Liam,Rossi,Madríd,2024-06-23
+260,Carlos,Smith,BARCELONA ,2024-10-21
+274,Lucas,,Madird,2024-06-11
+591,Sofia,Navarro,mad rid,2024-12-24
+568,Marta,Sanchez,bar celona,2024-10-20
+595,john,Rodriguez,Barcelóna,2024-12-13
+376,Marta,Torres,mad rid,2024-11-03
+268,Leo, Costa ,Madird,2024-06-14
+632,Noah,diaz,Barcel0na,2024-11-08
+551,Marta,Perez,barcelona,2024-11-07
+69,MATEO,Garcia,madrid,2024-06-06
+54,JULIA,Brown,MADRID,2024-08-06
+14, Nina ,Torres, MADRID ,2024-10-19
+531,Carlos,Rodriguez,Barcelona,2024-07-03
+254,Mateo,Sanchez,barcelona,20240610
+424,ALEX,,Madríd,2024-11-04
+504,Sara,Diaz, MADRID ,2024-07-20
+377,maria,Martinez, BARCELONA,2024-10-25
+237,Leo,Dubois,Madird,20241014
+144,Nina,Gonzalez,barcelona,2024-09-10
+698,Sofia,Wilson,barcelona,2024-07-22
+501,Julia,Brown,MaDrId,2024-07-13
+530,John,Sanchez,bar celona,2024-07-26
+62,David,Sanchez,,2024-06-06
+109,Mateo,rossi,,2024-12-10
+61,David,Navarro, MADRID ,2024-07-08
+275,Hugo,, BARCELONA,2024-12-12
+274,Lucas,,mADIRD,2024-06-11
+231,Nina,Gonzalez,Barcelona,2024-07-13
+678,Emma,Torres,Barcelona,20240720
+430,Noah,Muller,Barcelóna,2024-09-08
+88,Olivia,Romero,madrid,2024-12-21
+502,Hugo,Rodriguez,Madrid,2024-12-22
+550,Anna,Silva,Barcelona,2024-06-16
+624,Mateo,Rodriguez,BARCELONA ,2024-08-14
+75,John,Diaz,Madird,2024-10-12
+302,Alex,,BARCELONA ,2024-09-21
+616,Anna,Wilson,bar celona,2024-10-30
+440,Mateo,Rodriguez,MaDrId,2024-10-05
+407,Lucas,Rossi,mad rid,2024-10-26
+562,Julia,Sanchez,BARCELONA ,not_a_date
+196,Maria,Sanchez,mad rid,2024-11-12
+346,Sofia,Romero, MADRID ,2024-09-28
+127,Olivia,Diaz,Madrid,2024-09-01
+543,Liam,NAVARRO, MADRID ,2024-10-08
+422,Noah,Rossi,Barcel0na,2024-06-29
+434, Leo ,Silva,mad rid,2024-12-20
+380,Carlos,Rodriguez,,2024-10-14
+156,Lucas,Wilson,mad rid,2024-09-08
+384, Liam ,Muller,madrid,2024-07-07
+10,Daniel,Garcia,madrid,2024-10-03
+315,Lucas,Muller,MaDrId,
+121,Noah,Silva,MaDrId,2024-08-31
+106,Carlos,Smith,Barcelona,2024-07-12
+482,Mateo,Romero,barcelona,not_a_date
+487,Sara,Lopez,Madrid,2024-07-20
+409,Mateo,Dubois,mADRÍD,2024-11-20
+671,Hugo,Rossi,,2024-06-11
+639,Alex,Silva,bar celona,2024-09-10
+123,Leo,Brown,Barcel0na,2024-12-24
+190,,Sanchez,Barcelona,2024-07-21
+294,carlos,Brown,,2024-07-31
+200,Sara,Silva,BARCELONA ,2024-07-01
+417,Leo,Navarro,bar celona,2024-07-26
+627,CARLOS,Muller,,2024-09-20
+510,Sofia,Rodriguez,barcelona,2024-11-19
+442,Emma,Costa,madrid,2024-08-09
+403,Olivia,Lopez,barcelona,2024-06-13
+32, Hugo ,Lopez,Madríd,2024/12/22
+278,Sofia,Navarro,mad rid,2024-08-09
+707,Nina,PEREZ,Barcel0na,2024-10-25
+242,Liam,Navarro,bar celona,2024-09-01
+337,Daniel,Martinez,Barcelóna,
+503,Maria,Silva, BARCELONA,2024-09-28
+342,Daniel,Perez,BARCELONA ,2024-06-28
+57,,Silva,Madrid,2024-12-01
+160,Alex,Rossi,barcelona,2024-10-19
+317,Lucas,SILVA,barcelona,2024-09-24
+588,Sara,Navarro,Madríd,2024-11-12
+534,Liam, Muller ,barcelona ,not_a_date
+341,John,Martinez, madrid ,20240908
+332,Liam,Martinez,Barcelona,2024-06-03
+149,Maria,Rodriguez, MADRID ,not_a_date
+229,Carlos,Garcia,Barcelona,2024-06-03
+501,Julia,Brown,MaDrId,2024-07-13
+336,Daniel,Brown, MADRID ,2024-10-30
+585,Marta,Lopez,bar celona,2024-12-13
+395,Lucas,Brown,Barcel0na,2024-06-22
+512,,Muller,Madríd,2024-10-25
+554,Olivia,Diaz,mad rid,2024-09-10
+361,Noah,Gonzalez,Madrid,2024-07-13
+368,MARIA,Smith,Madird,2024-11-16
+211,John,Muller,barcelona,2024-12-07
+15,Liam,Muller,Madrid,2024-08-22
+171,Sofia,Sanchez,MaDrId,2024-11-25
+143,David,Brown,,2024-09-01
+635,Anna,brown,Barcel0na,2024-06-04
+312,Marta,,bar celona,2024-10-12
+496,olivia,Lopez,BARCELONA ,2024-09-15
+345,Anna,Silva, MADRID ,2024-12-21
+600,Noah,Garcia,madrid,2024-11-21
+136,Maria,Garcia,mad rid,2024/08/28
+339,Anna,Gonzalez,Madríd,2024-12-15
+323,Hugo,Gonzalez,bARCELÓNA,2024-06-07
+388,Carlos,WILSON, BARCELONA,2024-11-19
+147,Hugo,garcia, MADRID ,2024-07-04
+203,John,costa,mad rid,2024-11-10
+445,John,Diaz, MADRID ,2024-09-25
+140,John,Silva,Barcelóna,2024-10-06
+643,Noah,NAVARRO,Barcelona,2024-12-26
+47,Daniel,Dubois, BARCELONA,2024-11-28
+125,leo,Torres,madrid,
+20,Julia,Wilson,barcelona,2024-12-16
+45,liam,Garcia,Madríd,2024-11-21
+578,marta,Martinez,Barcel0na,2024-10-05
+201,Nina,Wilson,Madríd,2024-10-25
+44,Leo,Costa,barcelona,2024-06-21
+601,Emma,Lopez,Madird,2024-06-17
+120,Maria,Lopez,Madríd,2024-09-07
+710,hugo,Dubois,Barcel0na,2024-12-13
+577,Emma,Sanchez, MADRID ,2024-08-19
+491,Alex,Diaz,barcelona,
+709,Olivia,Sanchez,Madríd,2024-11-20
+343,Daniel,Muller,Barcel0na,2024-07-04
+418,Emma,Gonzalez,BARCELONA ,not_a_date
+197,Leo,Romero, MADRID ,2024-06-13
+277,Emma,, MADRID ,2024-06-07
+488,Marta,Dubois,madrid,2024-11-18
+49,Hugo,Vega, BARCELONA,2024-10-17
+659,Daniel,Lopez,barcelona,not_a_date
+57,,Silva,Madrid,2024-12-01
+104,Noah,Wilson,mad rid,20241107
+448,,Torres,madrid,2024-10-05
+290,Nina,Vega,Barcelóna,2024-12-01
+662,Anna,Dubois,BARCELONA ,2024-11-16
+142,David,Smith,Madríd,2024-10-10
+683,Nina,Diaz,MaDrId,2024-10-18
+529,Julia,Dubois, MADRID ,2024-07-10
+118,Olivia,Sanchez,Barcelona,2024-10-10
+396,, Dubois ,Barcelóna,2024-11-23
+612,Hugo,Costa,madrid,2024-09-20
+64,Olivia,Vega, BARCELONA,2024-12-12
+307,Emma,Vega,bar celona,2024-06-28
+649,Lucas,,,2024-12-28
+19,Noah,WILSON,Madrid,2024-11-09
+537,Emma,Muller,BARCELONA ,2024/10/16
+555,Emma,sanchez, BARCELONA,2024-06-26
+557,Alex,Silva,madrid,2024-06-21
+217,LIAM,Torres,bar celona,2024-11-04
+78,David,Gonzalez,mADRÍD,2024-09-15
+578,marta,Martinez,Barcel0na,2024-10-05
+473,Daniel,Rossi,Barcelona,2024-09-20
+21,Noah,Smith,mad rid,2024-09-09
+599,Lucas,Navarro,mad rid,2024-09-10
+309,OLIVIA,Rodriguez,barcelona,2024-11-04
+190,,Sanchez,bARCELONA,2024-07-21
+218,Leo,Gonzalez,bar celona,2024-06-30
+83,Marta,Navarro, MADRID ,2024-10-22
+89,Lucas,Brown, BARCELONA,2024-07-27
+397, Olivia ,Dubois, BARCELONA,2024-09-24
+387,Lucas,Silva,madrid,2024-11-26
+392,David,Gonzalez,Barcelona,2024/07/22
+280,Julia,Costa,mad rid,2024-12-05
+357,Carlos,Dubois,Madríd,2024-10-23
+677,Julia, Muller ,Madríd,2024-10-08
+411,David,Navarro,madrid,2024-10-07
+689,david,Martinez,Barcelona,2024-09-20
+205,Emma,Diaz,madrid,2024-11-22
+35,Daniel,Muller,Madríd,2024-07-29
+61,David,Navarro, MADRID ,2024-07-08
+320,Maria,Lopez,madrid,2024-08-08
+189,Noah,Smith, BARCELONA,
+220,Liam,Perez,Madrid,2024-12-12
+93,Noah,GONZALEZ,Madird,2024-11-17
+4,Mateo,Costa,mad rid,2024-11-30
+51,MATEO,COSTA,barcelona ,2024-09-08
+183,Lucas,Rossi,Madrid,2024-08-12
+703,Julia,Silva,Barcel0na,2024-07-15
+216,Maria,Torres,,2024-10-23
+240,Alex,Diaz, MADRID ,2024-06-01
+22,Liam,lopez,Barcelona,2024-10-22
+604,Alex,Smith, MADRID ,2024-07-05
+330,Hugo,Costa,barcelona ,2024-09-07
+434, Leo ,Silva,mad rid,2024-12-20
+30,Sofia,Torres,BARCELONA ,2024-12-05
+213,Hugo,Brown,Barcel0na,2024-09-22
+715,Lucas,Torres,bar celona,2024-12-09
+87,John,Rossi,madrid,2024/09/08
+192,Mateo,Dubois,BARCELONA ,2024-06-12
+596,Leo,, MADRID ,2024-12-20
+469,mateo,Diaz,barcelona,
+605,Noah,Smith,Madrid,2024/08/22
+506,Liam,Diaz,barcelona,2024-08-21
+675,John,Dubois, MADRID ,2024-08-30
+582,Anna,Sanchez,BARCELONA ,2024-12-25
+122,Lucas,Dubois,Madríd,2024-12-09
+55,Emma,Rodriguez,BARCELONA ,not_a_date
+569,Leo,Silva,Madird,2024-09-10
+286,John,Brown,Madrid,2024-10-18
+439,Marta,Wilson,Barcel0na,2024-11-29
+679,Hugo,Sanchez, BARCELONA,2024/09/22
+350,Olivia,Muller,bar celona,2024-07-09
+652,Nina,Torres,MaDrId,2024-11-15
+483,,Smith,bar celona,2024-09-05
+207,Emma,Perez,madrid,2024-07-03
+375,Liam,Costa,Madríd,2024-08-30
+705,Noah,Smith,bar celona,
+645,Noah,Wilson, MADRID ,2024-07-22
+393, Anna ,,Madríd,
+168,Olivia,Dubois,bar celona,2024-10-31
+212,Mateo,Vega,Barcel0na,2024-09-16
+684,HUGO,Gonzalez,Madird,2024/12/02
+553,Daniel,Torres, BARCELONA,2024-10-24
+409,Mateo,Dubois,Madríd,2024-11-20
+23,Hugo,Diaz, MADRID ,2024-09-01
+462,Mateo,Sanchez,bar celona,2024-12-11
+208,Olivia,Sanchez,Barcelóna,2024-10-11
+5,David,Dubois,BARCELONA,2024-09-23
+239,Mateo,Rossi, BARCELONA,2024-10-08
+84,John,Romero,MaDrId,2024-11-18
+241,Emma,Muller,bar celona,2024-06-30
+175,Hugo,Brown,barcelona,2024-08-28
+651,Sofia,Navarro,mad rid,2024-09-23
+680,SARA,Vega,Madrid,2024-12-04
+412,Nina,Torres,,2024-11-10
+500,Emma,Garcia, MADRID ,2024-08-31
+165,Noah,DUBOIS,Madríd,2024-08-04
+517,Marta,Perez,Madríd,2024-06-30
+372,Carlos,Rodriguez,bar celona,2024-09-25
+433,Carlos,Silva,mad rid,2024-07-11
+544,Sofia,Navarro,MaDrId,2024-07-17
+435,Lucas,Vega,Barcelóna,2024-06-17
+485,Marta,Sanchez,Madrid,2024-12-30
+100,Marta,Wilson,,2024-07-14
+427,,Costa,BARCELONA ,2024-06-11
+191,Sofia,Vega,bar celona,2024-06-29
+8,Olivia,Lopez,Madird,2024-10-12
+303,Olivia,Dubois,barcelona,2024/10/04
+615,Julia,Wilson,Madird,2024-08-28
+263,Daniel,Romero,madrid,2024-11-06
+196,Maria,Sanchez,mad rid,2024-11-12
+540,Nina,dubois,Madrid,2024-06-05
+493,JOHN,Wilson, MADRID ,2024-10-07
+352,Marta,Romero,barcelona,2024-06-07
+414,Lucas,Perez,mad rid,2024/10/27
+166,Daniel,Romero,MAD RID,2024-09-17
+219, Marta ,Gonzalez,Madird,2024-11-03
+267,Anna,Muller,Madrid,2024-07-16
+634,Nina,Rossi,Madird,2024-09-17
+29,Anna,Romero,,2024-12-19
+262, Leo ,Brown,mad rid,2024-08-30
+454,Emma,Dubois,BARCELONA ,2024-09-10
+532,Emma,costa,Madrid,2024-12-30
+296,Olivia,dubois,madrid,2024-07-06
+78,David,Gonzalez,Madríd,2024-09-15
+592,Leo,Romero,mad rid,2024-07-03
+9,Hugo,Rossi,Madrid,2024-10-05
+167,Daniel,Rossi,mad rid,2024-10-02
+209,Sofia,Diaz, MADRID ,2024-12-31
+52,Liam,Rodriguez,Barcelóna,2024-10-16
+436,nina,Romero,BARCELONA ,2024-10-17
+521,Lucas,Navarro,Barcel0na,2024-07-15
+391,Julia,Diaz,Madríd,2024-07-01
+72,Noah,SANCHEZ,mad rid,2024-07-20
+266,David,Romero,madrid,2024-10-18
+668,Anna,Garcia,Barcel0na,20241225
+657,Sara,Silva,Barcelona,2024-10-25
+383,John,Silva,Madird,2024-06-04
+96,Sara,Vega,bar celona,2024-10-15
+622,Nina,Dubois,Barcelona,2024-10-09
+70,Mateo,Navarro,bar celona,2024-11-06
+389,John,Smith,BARCELONA ,2024-11-26
+244,Sofia,Lopez,Madrid,2024-11-27
+344,Nina,Diaz,mad rid,2024-09-05
+524,Marta,Vega,madrid,2024-09-16
+697,David,Garcia,BARCELONA ,2024-10-24
+264,Mateo,Romero, BARCELONA,2024-11-10
+67,Hugo,Garcia, BARCELONA,2024-12-13
+2,Sofia,Lopez,BARCELONA ,2024-11-21
+415,Lucas,Navarro,Madird,2024-07-25
+539,Noah,Smith,mad rid,2024-12-07
+589,Nina,Gonzalez,madrid,2024-11-17
+95,Mateo,vega, MADRID ,2024-07-11
+292,Nina,Brown,Madríd,2024-07-27
+76,Alex,Sanchez,BAR CELONA,2024-11-15
+549,carlos,Muller, MADRID ,2024-07-18
+318,Leo,,Barcel0na,not_a_date
+53,MATEO,Dubois,mad rid,2024-06-17
+611, Anna ,rossi, MADRID ,2024-11-15
+333,David,Brown,BARCELONA ,2024-12-22
+114,Mateo,ROSSI,Barcel0na,2024-07-28
+63,Sara, Garcia ,Madird,2024-06-04
+459,Carlos, Smith ,madrid,2024-10-05
+287,Emma,Rodriguez,Barcel0na,2024-11-01
+166,Daniel,Romero,mad rid,2024-09-17
+658,Olivia,Gonzalez,barcelona,2024-08-27
+413, Marta ,Gonzalez,Barcelóna,2024-09-17
+74,Julia,Perez,Madrid,not_a_date
+178,Daniel,Rodriguez, MADRID ,2024-10-26
+174,Emma,Gonzalez,Madrid,2024-11-18
+429,Emma,Rodriguez,bar celona,2024-06-13
+699,NOAH,Silva,,2024-07-13
+66,Carlos,DUBOIS,bar celona,2024-07-21
+324,Sofia,WILSON,Barcelóna,2024-07-20
+59,Carlos,Dubois,Madird,2024-08-31
+98,Anna,Muller,Madrid,2024-07-18
+421,Julia,Diaz,Madríd,2024-07-31
+655,John,Vega, MADRID ,2024-11-04
+374,LEO,Dubois,Madird,2024-11-12
+232,Liam,Diaz,mad rid,not_a_date
+94,Julia,Brown,Madird,2024-07-25
+455,Liam,Silva,mad rid,2024-12-29
+700,Liam,Brown,Barcelona,
+405,David,Rossi, MADRID ,2024-08-11
+480,Carlos,rossi,Barcel0na,2024/08/23
+511,Hugo,Dubois,Barcelona,2024-06-22
+101,Nina,Rossi,Barcelóna,2024-08-11
+246,Marta,Martinez,Barcelona,2024-11-27
+576,daniel,Brown, BARCELONA,20240725
+586,,Costa,Madrid,2024-11-06
+695,David,Vega, BARCELONA,2024-08-04
+204,,wilson,Madird,2024-11-01
+456,Olivia,Smith,Madird,2024-12-19
+153,Nina,perez,mad rid,2024/08/22
+184,emma,Dubois,Madríd,2024-12-08
+280,Julia,Costa,mad rid,2024-12-05
+458,Maria,Dubois, MADRID ,2024-10-09
+527,Nina,Rossi,BARCELONA ,2024-07-10
+151,Noah,Navarro,bar celona,2024-06-11
+321,Liam,Rossi,Barcelóna,2024-07-14
+490,Olivia,Navarro,Madrid,2024-08-26
+714,John,Rodriguez,Barcelóna,2024-12-22
+362,Lucas,Muller,BARCELONA ,2024-10-13
+636,Leo,Costa,BARCELONA ,2024-09-09
+583, Sara ,Navarro,madrid,2024-09-06
+282,Hugo,rossi,madrid,2024-12-20
+238,Sofia,Perez,BARCELONA ,2024-07-30
+438,HUGO,Martinez,Barcelóna,2024-08-09
+325,Maria,Sanchez,Madird,2024-08-26
+331,Noah,Rossi,BARCELONA ,
+266,David,Romero,madrid,2024-10-18
+206,Leo,Perez,Madríd,2024-06-07
+355,John,Torres,Barcelóna,2024-06-03
+463,Nina,Diaz,madrid,2024-12-10
+133,Noah,PEREZ,Barcelona,2024-06-11
+42,David,Torres,Barcel0na,2024-08-17
+636,Leo,Costa,BARCELONA ,2024-09-09
+711,Alex,Romero,Barcel0na,2024-11-01
+269,Sara,Perez, MADRID ,2024-11-20
+685,Leo,Navarro,BARCELONA ,2024-06-20
+716,,Gonzalez,MaDrId,2024-07-24
+507,Carlos,Perez,MaDrId,2024-11-09
+97,Carlos,Navarro,,2024-10-18
+609,Olivia,Garcia,barcelona,2024-10-18
+495,Lucas,Garcia,Barcel0na,2024-06-16
+468,MATEO,Diaz,Barcelóna,
+619,Julia,Vega,bARCELÓNA,2024-12-11
+653,Sara,Vega,barcelona,2024-08-08
+18,Carlos,Brown,MaDrId,2024-07-30
+644,Marta,Muller, BARCELONA,2024-10-29
+261,NINA,Silva,Madríd,2024-09-03
+467,Liam,Torres,Madird,2024-09-18
+478,,Rossi, BARCELONA,2024-11-23
+378,Noah,Martinez,Barcelona,2024-06-05
+99,Carlos,Torres,mad rid,2024-06-26
+306,Mateo,Navarro,mad rid,2024-11-18
+547,Carlos,,Madird,2024-08-28
+542,Lucas,Martinez,Madrid,2024/06/07
+614,Lucas,Brown,Barcelona,2024-10-01
+665,Sofia,SILVA,Barcel0na,2024-09-08
+597,Sara,Smith,madrid,2024-07-20
+720,JOHN,Sanchez,,2024-11-15
+624,Mateo,Rodriguez,barcelona ,2024-08-14
+437,Hugo,Silva,MaDrId,
+179,Hugo,Lopez,bar celona,2024-06-01
+105,John,Garcia,Madrid,2024-09-30
+311,Emma,Rodriguez, BARCELONA,2024-11-01
+324,Sofia,WILSON,Barcelóna,2024-07-20
+713,Hugo,Romero, MADRID ,20241218
+155,SOFIA,Costa,Madird,2024-10-16
+718,Lucas,Torres,mad rid,2024-12-12
+489,Olivia,,Madird,2024-07-10
+124,Emma,Lopez,barcelona,2024-09-20
+43,Marta,Costa,Barcel0na,2024-10-13
+303,Olivia,Dubois,barcelona,2024/10/04
+453,Leo,Wilson,barcelona,2024-12-05
+620,NINA,Lopez,Madríd,2024-09-14
+271,Liam,ROSSI,barcelona,2024-07-01
+255,,Diaz,madrid,2024-07-02
+610,Sofia, Silva , BARCELONA,2024-07-18
+590,Nina,Lopez,barcelona,2024-09-04
+215,Maria, Muller ,BARCELONA ,2024-06-21
+250,Daniel,COSTA, BARCELONA,2024-07-25
+223,Anna,Garcia,bar celona,2024-08-14
+719,Noah,costa,madrid,
+80,Marta,,Madríd,2024-12-20
+56,Maria,Muller,MaDrId,2024-10-03
+654,Anna,Rodriguez,bar celona,2024-07-22
+410,Alex,Perez,Madríd,2024-11-17
+146,Carlos,Garcia,Madrid,2024-10-29
+444,Mateo,Torres,mad rid,2024-06-09
+322,Sara,Rossi,madrid,2024-10-14
+13,Olivia,Muller,MaDrId,2024-07-07
+139,Julia,,Barcelóna,2024-11-03
+364,Nina,Vega,,2024-09-12
+712,John,Smith,MaDrId,2024-10-10
+272,Maria,Costa,BARCELONA ,2024-10-26
+360,Alex,Brown,BARCELONA ,2024-08-10
+477, Daniel ,Vega, MADRID ,2024-11-05
+420,anna,Brown,Barcelóna,2024-12-07
+623,,Smith,Madríd,2024-11-06
+466,Alex,costa,BARCELONA ,2024-08-15
+119,Anna,Perez,,2024-12-08
+339,Anna,Gonzalez,mADRÍD,2024-12-15
+14, Nina ,Torres, madrid ,2024-10-19
+681,Emma,Wilson,bar celona,2024-08-14
+515,Noah,Gonzalez,Madrid,2024-09-07
+248,Hugo,Brown,Barcel0na,2024-06-01
+113,daniel,Martinez,madrid,2024-11-01
+253,Noah,Smith,Madird,2024-11-08
+603,Sofia,Vega, MADRID ,2024-08-15
+265,Liam,,MaDrId,2024-11-14
+110,Maria,Lopez, BARCELONA,2024-10-04
+494,DAVID,Lopez,Madríd,2024-09-11
+77,Maria,Martinez,MaDrId,2024-09-07
+694,Mateo,Vega,Barcelóna,2024-06-29
+26,Noah,Brown,mad rid,2024-07-11
+518,EMMA,Navarro,mADRID,2024-10-06
+514,Carlos,Costa, MADRID ,2024-11-02
+370,Anna,Perez,Barcelóna,2024-06-02
+349,LEO,Diaz, MADRID ,2024-11-12
+334,Lucas,Rossi,madrid,2024-09-04
+509,Hugo,SANCHEZ,,20240829
+657,Sara,Silva,bARCELONA,2024-10-25
+536,Noah,Navarro,barcelona,2024-12-01
+228,Nina,Silva,Barcel0na,2024-08-14
+247,Lucas,Navarro,Barcelona,2024-06-14
+633,Alex,,madrid,2024-07-18
+295,Sofia,Garcia,Barcel0na,2024-08-23
+58,Hugo,Romero,,2024-12-05
+488,Marta,Dubois,madrid,2024-11-18
+481,Liam,Vega,mad rid,20241006
+304,Anna,Dubois, MADRID ,2024-10-10
+222,Emma,Torres,MaDrId,2024-12-07
+224,Nina,Dubois,BAR CELONA,2024-06-03
+51,MATEO,COSTA,BARCELONA ,2024-09-08
+257,Anna,Costa,Barcelona,2024-09-11
+656,emma,Sanchez,Barcelóna,2024-09-20
+40,Leo,DUBOIS,Barcelóna,not_a_date
+379,,Vega,barcelona,
+215,Maria, Muller ,BARCELONA ,2024-06-21
+367,Sara,wilson,Barcel0na,2024-07-16
+283,Nina,Diaz,MaDrId,2024-07-07
+156,Lucas,Wilson,mad rid,2024-09-08
+283,Nina,Diaz,MaDrId,2024-07-07
+284,Daniel,Diaz, MADRID ,2024-10-14
+31,Daniel,Sanchez,madrid,2024-12-14
+533,Daniel,Dubois,Madrid,2024-07-18
+293,Olivia,Dubois,Madrid,2024-12-06
+626,Marta,rossi,Barcel0na,2024-07-17
+135,Olivia,Torres,MaDrId,2024-08-25
+12,Emma,Martinez, MADRID ,2024-10-25
+470,Lucas,Navarro,madrid,2024-10-18
+617,Daniel,Martinez,Madríd,2024-12-23
+335,Sofia, Wilson ,Madrid,2024-07-21
+646,Alex,Diaz,mad rid,2024-10-28
+310,John,Diaz,Madrid,2024-11-27
+163,Leo,Diaz,MaDrId,2024-08-21
+518,EMMA,Navarro,Madrid,2024-10-06
+356,Lucas, Torres ,mad rid,2024-09-17
+132,Daniel,Muller,mad rid,2024-06-29
+130,Alex,Lopez,Madríd,2024-12-05
+382,Nina,Rossi,Madird,2024-10-21
+373,Lucas,ROMERO,,2024-06-21
+60,Mateo,Sanchez,bar celona,2024-08-12
+457,Hugo,Garcia, MADRID ,2024-06-30
+574,Sara,Muller,Barcel0na,2024-08-27
+27,Hugo,,MaDrId,2024-08-01
+674,Sara,Smith,Barcel0na,2024-10-02
+315,Lucas,Muller,mAdRiD,
