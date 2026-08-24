@@ -1,0 +1,98 @@
+project:
+  name: retail-weather-etl
+
+paths:
+  raw_dir: data/raw
+  silver_dir: data/processed/silver
+  rejected_dir: data/processed/rejected
+  gold_csv_dir: data/processed/gold/csv
+  gold_parquet_dir: data/processed/gold/parquet
+  sql_model: sql/build_analytics_model.sql
+  duckdb_path: warehouse.duckdb
+
+logging:
+  file: logs/etl/pipeline.log
+  max_bytes: 2000000
+  backup_count: 5
+  level: INFO
+
+exports:
+  mart_formats:
+    # csv is optional for debugging/demo; parquet is the canonical analytical output.
+    - parquet
+  star_schema_formats:
+    - parquet
+
+weather:
+  provider: open-meteo-archive
+  timezone: Europe/Madrid
+  start_date: 2025-01-01
+  end_date: 2025-03-31
+  request:
+    timeout_seconds: 30
+    max_retries: 3
+    backoff_base_seconds: 1.0
+    jitter_max_seconds: 0.5
+    max_workers: 4
+  cities:
+    madrid:
+      lat: 40.4168
+      lon: -3.7038
+    barcelona:
+      lat: 41.3851
+      lon: 2.1734
+
+normalization:
+  city_map:
+    madrid: madrid
+    madríd: madrid
+    madird: madrid
+    mad rid: madrid
+    barcelona: barcelona
+    bar celona: barcelona
+    barcel0na: barcelona
+    barcelóna: barcelona
+  category_map:
+    sportwear: sportswear
+    sports wear: sportswear
+    sportswear: sportswear
+    " sportswear": sportswear
+    accesories: accessories
+    accessories: accessories
+    access0ries: accessories
+    fotwear: footwear
+    footw3ar: footwear
+    f00twear: footwear
+    footwear: footwear
+    outdoorgear: outdoor gear
+    outdor gear: outdoor gear
+    outdoor gear: outdoor gear
+    hydrtion: hydration
+    hydration: hydration
+    misc: unknown
+    other: unknown
+    others: unknown
+  product_name:
+    leet_enabled: true
+    leet_map:
+      "0": o
+      "1": i
+      "3": e
+      "4": a
+      "5": s
+      "7": t
+
+quality:
+  # Floors calibrated to the synthetic source baseline (not textbook ideals).
+  # A healthy run of the current CSVs should emit no quality warnings.
+  max_reject_rate: 0.45
+  min_valid_price_coverage: 0.90
+  max_unknown_city_rate: 0.08
+
+analytics:
+  buckets:
+    rain:
+      light_rain_lt_mm: 2.0
+    temperature:
+      cold_lt_c: 10.0
+      mild_lte_c: 25.0
