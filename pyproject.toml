@@ -1,0 +1,99 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "retail-weather-etl"
+version = "0.1.0"
+description = "End-to-end ETL to integrate retail sales and weather data."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "duckdb>=1.4,<2.0",
+    "numpy>=2.0,<3.0",
+    "pandas>=2.3,<3.0",
+    "pydantic>=2.13,<3.0",
+    "pyarrow>=21.0,<22.0",
+    "PyYAML>=6.0,<7.0",
+    "requests>=2.32,<3.0",
+    "pandera>=0.32.0",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.4,<9.0",
+    "black>=26.0,<27.0",
+    "ruff>=0.15,<0.16",
+    "mypy>=1.11,<2.0",
+    "types-requests>=2.32.0.20250328,<3.0",
+    "types-PyYAML>=6.0.12.20250915,<7.0",
+]
+security = [
+    "bandit>=1.8,<2.0",
+    "pip-audit>=2.9,<3.0",
+]
+
+[tool.setuptools.packages.find]
+include = ["etl*", "pipelines*"]
+
+[tool.black]
+line-length = 88
+target-version = ["py311"]
+
+[tool.ruff]
+line-length = 88
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I"]
+ignore = ["E501"]
+
+[tool.mypy]
+python_version = "3.11"
+files = [
+    "pipelines/pipeline.py",
+    "dags/etl_dag.py",
+    "etl/extract.py",
+    "etl/lineage.py",
+    "etl/load.py",
+    "etl/schemas/silver.py",
+    "etl/settings.py",
+    "etl/transform.py",
+    "etl/validations.py",
+    "etl/transform_parts/clean_customers.py",
+    "etl/transform_parts/clean_products.py",
+    "etl/transform_parts/clean_sales.py",
+    "etl/transform_parts/clean_weather.py",
+    "etl/transform_parts/date_parsing.py",
+    "etl/transform_parts/normalization_config.py",
+    "etl/transform_parts/profiling.py",
+    "etl/transform_parts/save_outputs.py",
+    "etl/transform_parts/transform_pipeline.py",
+    "tests",
+]
+follow_imports = "skip"
+pretty = true
+show_error_codes = true
+warn_unused_ignores = true
+warn_redundant_casts = true
+warn_return_any = true
+disallow_any_generics = true
+no_implicit_reexport = true
+no_implicit_optional = true
+check_untyped_defs = true
+ignore_missing_imports = true
+
+[[tool.mypy.overrides]]
+module = [
+    "dags.etl_dag",
+    "etl.extract",
+    "etl.lineage",
+    "etl.load",
+    "etl.schemas.*",
+    "etl.settings",
+    "etl.transform",
+    "etl.transform_parts.*",
+    "etl.validations",
+    "pipelines.pipeline",
+]
+follow_imports = "normal"
