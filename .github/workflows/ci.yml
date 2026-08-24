@@ -1,0 +1,118 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - "**"
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  tests:
+    name: Quality + Tests (py${{ matrix.python-version }})
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.11", "3.12"]
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install uv and set Python version
+        uses: astral-sh/setup-uv@08807647e7069bb48b6ef5acd8ec9567f424441b # v8.1.0
+        with:
+          version: "0.11.15"
+          python-version: ${{ matrix.python-version }}
+          enable-cache: true
+
+      - name: Check lockfile
+        run: uv lock --check
+
+      - name: Sync dependencies
+        run: uv sync --locked
+
+      - name: Run formatting check (Black)
+        run: uv run black --check .
+
+      - name: Run lint (Ruff)
+        run: uv run ruff check .
+
+      - name: Run type check (Mypy)
+        run: uv run mypy
+
+      - name: Run unit + integration tests
+        run: make test
+
+  airflow-dag-parse:
+    name: Airflow DAG Parse
+    runs-on: ubuntu-latest
+    env:
+      AIRFLOW_VERSION: "2.10.5"
+      PYTHON_VERSION: "3.11"
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install uv and set Python version
+        uses: astral-sh/setup-uv@08807647e7069bb48b6ef5acd8ec9567f424441b # v8.1.0
+        with:
+          version: "0.11.15"
+          python-version: "3.11"
+          enable-cache: true
+
+      - name: Check lockfile
+        run: uv lock --check
+
+      - name: Install Airflow + DAG test dependencies
+        shell: bash
+        run: |
+          uv venv
+          source .venv/bin/activate
+          CONSTRAINT_URL="https://raw.githubusercontent.com/apache/airflow/constraints-${AIRFLOW_VERSION}/constraints-${PYTHON_VERSION}.txt"
+          uv pip install "apache-airflow==${AIRFLOW_VERSION}" --constraint "${CONSTRAINT_URL}"
+          uv pip install -r pyproject.toml
+          uv pip install pytest
+          uv pip install -e . --no-deps
+          uv pip check
+
+      - name: Parse DAG with Airflow
+        run: uv run --no-sync python -m pytest -q tests/unit/test_dag_parse.py
+
+  security:
+    name: Security Scan
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install uv and set Python version
+        uses: astral-sh/setup-uv@08807647e7069bb48b6ef5acd8ec9567f424441b # v8.1.0
+        with:
+          version: "0.11.15"
+          python-version: "3.11"
+          enable-cache: true
+
+      - name: Check lockfile
+        run: uv lock --check
+
+      - name: Sync security environment
+        run: uv sync --locked --no-default-groups --group security
+
+      - name: Run Bandit
+        run: uv run bandit -r etl pipelines dags -q -f json -o bandit-report.json
+
+      - name: Upload Bandit report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: bandit-report
+          path: bandit-report.json
+          if-no-files-found: error
+
+      - name: Run pip-audit
+        run: uv run pip-audit

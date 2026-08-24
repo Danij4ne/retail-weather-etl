@@ -1,0 +1,116 @@
+x-airflow-environment: &airflow-environment
+  AIRFLOW__CORE__EXECUTOR: LocalExecutor
+  AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://${POSTGRES_USER}:${POSTGRES_PASSWORD}@postgres/${POSTGRES_DB}
+  AIRFLOW__CORE__LOAD_EXAMPLES: "False"
+
+# Full project mount is intentional. load writes warehouse.duckdb at the project
+# root, cleanup writes logs/etl/lineage, and extract stages under tmp/. Mounting
+# only etl/ + data/ would hide those artifacts from the host.
+x-airflow-volumes: &airflow-volumes
+  - ../:/opt/airflow/project
+  - ../dags:/opt/airflow/dags
+  - ../logs/airflow:/opt/airflow/logs
+
+services:
+  postgres:
+    image: postgres:15-alpine
+    container_name: etl-postgres
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      POSTGRES_DB: ${POSTGRES_DB}
+    volumes:
+      - postgres-db-volume:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD", "pg_isready", "-U", "${POSTGRES_USER}"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    restart: unless-stopped
+    mem_limit: ${POSTGRES_MEM_LIMIT:-512m}
+    cpus: "${POSTGRES_CPUS:-0.50}"
+
+  airflow-init:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile.airflow
+    image: retail-airflow:${AIRFLOW_IMAGE_TAG:-local}
+    container_name: etl-airflow-init
+    # Run as the host user so bind-mounted logs and outputs stay writable on both
+    # sides. Group 0 is required: the Airflow image grants root-group write access
+    # to /opt/airflow and /home/airflow so the image can run under any uid.
+    user: "${AIRFLOW_UID:-50000}:0"
+    depends_on:
+      postgres:
+        condition: service_healthy
+    env_file:
+      - ../.env
+    environment:
+      <<: *airflow-environment
+    volumes: *airflow-volumes
+    command: >
+      bash -c "
+      airflow db migrate &&
+      airflow users create
+      --username ${AIRFLOW_ADMIN_USERNAME:-admin}
+      --firstname ${AIRFLOW_ADMIN_FIRSTNAME:-Admin}
+      --lastname ${AIRFLOW_ADMIN_LASTNAME:-User}
+      --role Admin
+      --email ${AIRFLOW_ADMIN_EMAIL:-admin@example.com}
+      --password ${AIRFLOW_ADMIN_PASSWORD}
+      "
+    mem_limit: ${AIRFLOW_INIT_MEM_LIMIT:-768m}
+    cpus: "${AIRFLOW_INIT_CPUS:-0.75}"
+
+  airflow-webserver:
+    image: retail-airflow:${AIRFLOW_IMAGE_TAG:-local}
+    container_name: etl-airflow-webserver
+    user: "${AIRFLOW_UID:-50000}:0"
+    depends_on:
+      airflow-init:
+        condition: service_completed_successfully
+    env_file:
+      - ../.env
+    environment:
+      <<: *airflow-environment
+    volumes: *airflow-volumes
+    command: webserver
+    ports:
+      - "127.0.0.1:8080:8080"
+    healthcheck:
+      test: ["CMD", "curl", "--fail", "http://localhost:8080/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+    restart: unless-stopped
+    mem_limit: ${AIRFLOW_WEBSERVER_MEM_LIMIT:-1g}
+    cpus: "${AIRFLOW_WEBSERVER_CPUS:-1.00}"
+
+  airflow-scheduler:
+    image: retail-airflow:${AIRFLOW_IMAGE_TAG:-local}
+    container_name: etl-airflow-scheduler
+    user: "${AIRFLOW_UID:-50000}:0"
+    depends_on:
+      airflow-init:
+        condition: service_completed_successfully
+    env_file:
+      - ../.env
+    environment:
+      <<: *airflow-environment
+    volumes: *airflow-volumes
+    command: scheduler
+    healthcheck:
+      test:
+        [
+          "CMD-SHELL",
+          "airflow jobs check --job-type SchedulerJob --hostname \"$${HOSTNAME}\"",
+        ]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+    mem_limit: ${AIRFLOW_SCHEDULER_MEM_LIMIT:-1g}
+    cpus: "${AIRFLOW_SCHEDULER_CPUS:-1.00}"
+    restart: unless-stopped
+
+volumes:
+  postgres-db-volume:

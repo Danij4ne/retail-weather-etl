@@ -1,0 +1,27 @@
+# VCS / editor
+.git
+.gitignore
+.vscode/
+.DS_Store
+
+# Python cache / virtualenv
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.venv/
+.venv*/
+venv/
+venv*/
+
+# Local runtime files
+.env
+logs/
+data/
+warehouse.duckdb
+
+# Optional local artifacts
+*.egg-info/
+build/
+dist/

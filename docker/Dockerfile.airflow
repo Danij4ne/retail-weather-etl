@@ -1,0 +1,22 @@
+ARG AIRFLOW_VERSION=2.10.5
+FROM apache/airflow:${AIRFLOW_VERSION}
+
+ARG AIRFLOW_VERSION
+
+USER airflow
+WORKDIR /opt/airflow/project
+
+COPY --chown=airflow:root pyproject.toml uv.lock README.md /opt/airflow/project/
+COPY --chown=airflow:root etl /opt/airflow/project/etl
+COPY --chown=airflow:root pipelines /opt/airflow/project/pipelines
+
+# This image only exposes the airflow user's site-packages on sys.path, and pip
+# honors PIP_USER=true, so it installs where Airflow itself imports from.
+# The bundled google/snowflake providers are unused here and pin pandas<2.2,
+# which the ETL requirements outgrow, so they are removed to keep `pip check`
+# a real guard instead of an ignored warning.
+RUN pip uninstall --yes \
+      apache-airflow-providers-google \
+      apache-airflow-providers-snowflake \
+    && pip install --no-cache-dir --editable /opt/airflow/project \
+    && pip check
