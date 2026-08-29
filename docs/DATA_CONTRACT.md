@@ -299,7 +299,7 @@ Contract summary:
 | `sale_date`                             | `DATE`          | No       | degenerate dimension               | Transaction date.                                           |
 | `quantity`                              | `INTEGER`       | No       | none                               | Sold units.                                                 |
 | `discount`                              | `DOUBLE`        | No       | none                               | Discount percentage.                                        |
-| `unit_price_at_sale`                    | `DOUBLE`        | Yes      | none                               | Price used for sale-level amount calculation.               |
+| `unit_price_at_sale`                    | `DOUBLE`        | Yes      | none                               | Catalog unit price of the product at this full refresh, not a guaranteed sale-time price. |
 | `has_weather_match`                     | `INTEGER`       | No       | none                               | `1` when weather matched, else `0`.                     |
 | `has_valid_price`                       | `INTEGER`       | No       | none                               | `1` when a valid product price exists, else `0`.        |
 | `gross_amount`                          | `DECIMAL(18,2)` | Yes      | none                               | `quantity * unit_price_at_sale` when price is valid.      |
@@ -311,7 +311,7 @@ Contract rules:
 - customer and product joins are inner joins; weather join is left join on (`sale_date`, `customer.city`)
 - weather gaps do not remove sales rows
 - invalid product prices do not remove sales rows
-- `unit_price_at_sale` is currently derived during the full-refresh load from the latest cleaned product price for the matching `product_id`; it is an analytical pricing proxy, not a guaranteed historical sale-time price
+- `unit_price_at_sale` is derived during the full-refresh load from the current cleaned product price for the matching `product_id`; it is an analytical catalog-price proxy, not a guaranteed historical sale-time price
 - amount columns are populated only when `has_valid_price = 1`
 
 ### 7.5 weather_sales_mart
@@ -330,7 +330,7 @@ Contract summary:
 | `total_units`                      | `HUGEINT`       | No       | none            | Sum of sold units.                                                     |
 | `num_orders`                       | `BIGINT`        | No       | none            | Number of fact rows in the group.                                      |
 | `num_orders_priced`                | `HUGEINT`       | No       | none            | Count of rows with `has_valid_price = 1`.                            |
-| `total_revenue`                    | `DECIMAL(38,2)` | Yes      | none            | Sum of `net_amount` over priced rows only.                           |
+| `total_revenue`                    | `DECIMAL(38,2)` | Yes      | none            | Sum of `net_amount` over priced rows only, at current catalog price; not historical billed revenue. |
 | `avg_ticket`                       | `DOUBLE`        | Yes      | none            | `total_revenue / num_orders_priced` when priced orders exist.        |
 | `avg_temp_c`                       | `DOUBLE`        | Yes      | none            | Average temperature across matched weather rows.                       |
 | `avg_precip_mm`                    | `DOUBLE`        | Yes      | none            | Average precipitation in millimeters.                                  |
@@ -343,7 +343,7 @@ Contract rules:
 
 - grouped by `sale_date`, `city`, and `category`
 - excludes rows where `customer.city` is null
-- `total_revenue` uses priced rows only
+- `total_revenue` uses priced rows only and inherits Decision 16: it is estimated at the catalog price of this refresh, not historical billed revenue
 - `avg_ticket` divides by `num_orders_priced`, not by total orders
 - `valid_price_rate` is a percentage, not a `0-1` ratio
 - a null bucket means no weather row joined; `unknown` means a weather row existed but that metric was null
@@ -364,7 +364,7 @@ Contract rules:
 | Blocking enforcement     | Missing required `silver` columns, incompatible `silver` types, duplicate business keys after cleaning, orphan customer/product keys in clean sales, invalid `price` / `is_price_valid` consistency, invalid weather uniqueness at (`date`, `city`), and null weather `date` / `city`. Gold also fails the load when SQL invariants break: unique `customer_id` / `product_id` / `weather_sk` / `(date, city)` / `sale_id`, non-null `dim_weather.weather_sk`, no fact orphans, and `num_orders_priced <= num_orders`. | `etl/transform_parts/save_outputs.py`, `etl/validations.py`, `sql/build_analytics_model.sql` |
 | Warning-only enforcement | Reject rate, unknown-city rate, or valid-price coverage beyond configured `quality.*` floors; weather coverage gaps; residual product-name digit anomalies                                                                                                          | `etl/validations.py`                                                                             |
 | Regression enforcement   | Output column contracts, cleaning rules, reject splitting, quality-gate behavior, SQL invariants, metric consistency checks, export-format behavior                                                                                                             | `tests/unit/*`, `tests/integration/*`                                                          |
-| Lineage evidence         | Stage timings, row counts (`extract`, `cleaned`, `rejected`, `unpublished` = rows dropped by deduplication, `mart` = published `weather_sales_mart` size, `mart_preview` = capped sample of at most 10 rows), serialized `quality_report`, artifact fingerprints, final run status and errors                                                                                                                                                    | `logs/etl/lineage/lineage_<run_id>.json`, `[OBSERVABILITY] summary=...`                        |
+| Lineage evidence         | Stage timings, row counts (`extract`, `cleaned`, `rejected`, `unpublished` = `extract − cleaned − rejected`: invalid customer/product keys, losing duplicates including weather and sales, and any other row that reaches neither silver nor `sales_rejected`; `mart` = published `weather_sales_mart` size, `mart_preview` = capped sample of at most 10 rows), serialized `quality_report`, artifact fingerprints, final run status and errors                                                                                                                                                    | `logs/etl/lineage/lineage_<run_id>.json`, `[OBSERVABILITY] summary=...`                        |
 
 ## 10. Source of Truth and Maintenance
 

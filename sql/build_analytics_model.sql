@@ -118,7 +118,7 @@ SELECT
   s.quantity,
   s.discount,
 
--- Frozen price
+-- Catalog price at refresh time (Decision 16). Not a sale-time snapshot.
   p.price AS unit_price_at_sale,
   CASE
     WHEN w.weather_sk IS NOT NULL THEN 1
@@ -170,6 +170,7 @@ WITH mart_base AS (
     SUM(f.quantity) AS total_units,
     COUNT(*) AS num_orders,
     SUM(f.has_valid_price) AS num_orders_priced,
+    -- Sum of net_amount using current catalog price, not historical revenue.
     ROUND(
       SUM(CASE WHEN f.has_valid_price = 1 THEN f.net_amount ELSE 0 END),
       2

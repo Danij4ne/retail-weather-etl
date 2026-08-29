@@ -83,7 +83,9 @@ normalization:
       "7": t
 
 quality:
-  # Floors calibrated to the synthetic source baseline (not textbook ideals).
+  # Regression floors vs this synthetic source, not textbook SLOs.
+  # A warning fires only if the run is dirtier than the current baseline.
+  # Recalibrate if the fixture (or a real source) changes dirtiness.
   # A healthy run of the current CSVs should emit no quality warnings.
   max_reject_rate: 0.45
   min_valid_price_coverage: 0.90
