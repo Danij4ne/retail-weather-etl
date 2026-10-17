@@ -57,14 +57,14 @@ Each decision is written in the same format:
 - `Context`: customer and product rows cannot be trusted downstream when their business key is missing or malformed.
 - `Decision`: drop `customers` and `products` rows whose IDs are missing, blank, non-numeric, or non-integer.
 - `Why`: the pipeline should not invent or guess entity identities.
-- `Consequences`: some raw rows are discarded early, but the published dimensions remain structurally trustworthy. Invalid keys are not written to a `customers_rejected` or `products_rejected` file; losing duplicates (Decision 7) are unpublished the same way. Those rows surface downstream through sales `unknown_*` / `invalid_*` reject reasons.
+- `Consequences`: some raw rows are discarded early, but the published dimensions remain structurally trustworthy. Invalid keys are not written to a `customers_rejected` or `products_rejected` file; losing duplicates (Decision 7) are unpublished the same way. The cleaner logs a warning with a **count**, not the dropped payload. Rows with a matching sale can still surface through sales `unknown_*` / `invalid_*` reject reasons; an invalid customer or product with no sales does not reappear in `sales_rejected`. Those drops are part of lineage `unpublished` (`extract − cleaned − rejected`), not a published audit file.
 
 ### Decision 7. Deduplicate using deterministic scoring instead of first-row wins
 
 - `Context`: duplicate business keys exist in multiple raw datasets, and not all duplicate candidates are equally complete.
 - `Decision`: compute a completeness score per row and keep the best candidate using stable sorting.
 - `Why`: deterministic score-based deduplication is more defensible than arbitrary `keep="first"` behavior.
-- `Consequences`: duplicate resolution is reproducible, auditable, and biased toward the most complete record.
+- `Consequences`: duplicate resolution is reproducible and biased toward the most complete record. What is auditable is the **rule** (completeness score, stable `mergesort`, `keep="first"`). Losing rows are not published; they are counted in lineage `unpublished` together with Decision 6 drops. Reconstructing a loser still requires the raw file.
 
 ### Decision 8. Split sales into clean and rejected outputs
 
@@ -106,7 +106,7 @@ Each decision is written in the same format:
 - `Context`: not every quality issue should stop the gold load. The synthetic source is intentionally dirty, so textbook thresholds (10% reject, 95% price coverage) fire on every healthy run.
 - `Decision`: treat contract breaks, orphan foreign keys, null/duplicate keys, and similar structural issues as blocking failures, while reject-rate and coverage issues remain warnings. Warning floors live in `quality.*` and are calibrated to the observed baseline of this source, not to an ideal rate. A warning fires only when a floor is breached.
 - `Why`: this keeps the quality gate strict where correctness matters and pragmatic where monitoring is more appropriate than hard failure. Alerts that always fire are not alerts.
-- `Consequences`: the pipeline can complete with warnings, but structural trust violations still stop analytical publication. Recalibrate `quality.max_reject_rate`, `quality.min_valid_price_coverage`, and `quality.max_unknown_city_rate` if the fixture dirtiness changes. Metrics still appear in `quality_report` even when no warning is emitted.
+- `Consequences`: the pipeline can complete with warnings, but structural trust violations still stop analytical publication. `quality.*` values are **regression floors** against the current synthetic baseline, not absolute quality SLOs: a healthy run of this fixture should emit no warnings. Recalibrate `quality.max_reject_rate`, `quality.min_valid_price_coverage`, and `quality.max_unknown_city_rate` if the fixture dirtiness changes. Metrics still appear in `quality_report` even when no warning is emitted.
 
 ### Decision 14. Use a deterministic surrogate key for `dim_weather`
 
@@ -127,7 +127,7 @@ Each decision is written in the same format:
 - `Context`: the current sales source does not publish a guaranteed historical unit price per sale, while the analytical model still needs a price basis to estimate revenue-style metrics.
 - `Decision`: derive `fact_sales.unit_price_at_sale` from the current cleaned product price joined by `product_id` during the full-refresh load.
 - `Why`: this keeps the model simple and allows revenue-style metrics without introducing SCD2 complexity or a separate historical price snapshot flow that the current sources do not support.
-- `Consequences`: `unit_price_at_sale`, `gross_amount`, `discount_amount`, and `net_amount` reflect the product price available at refresh time, not a guaranteed historical sale-time price. Historical revenue analytics would require either a source-level sale price snapshot or a historized product-price model.
+- `Consequences`: `unit_price_at_sale`, `gross_amount`, `discount_amount`, `net_amount`, and mart `total_revenue` reflect the product price available at refresh time, not a guaranteed historical sale-time price. The published column names are analytical proxies; SQL comments must not describe the price as frozen. Historical revenue analytics would require either a source-level sale price snapshot or a historized product-price model.
 
 ### Decision 17. Parse dates with explicit year-month-day formats
 
@@ -143,7 +143,7 @@ Each decision is written in the same format:
 - `Context`: silver, gold, and `warehouse.duckdb` live at fixed paths and are not partitioned per run.
 - `Decision`: set `max_active_runs=1` on the DAG.
 - `Why`: overlapping runs would race on the same artifacts, and DuckDB allows a single writer per file.
-- `Consequences`: runs queue instead of overlapping, which is acceptable for a full-refresh pipeline.
+- `Consequences`: Airflow runs queue instead of overlapping, which is acceptable for a full-refresh pipeline. `max_active_runs=1` does not serialize `pipelines/pipeline.py`; two local runs (or local plus DAG against the same paths) can still race on `warehouse.duckdb` and fixed silver/gold artifacts.
 
 ## Change Rules
 
