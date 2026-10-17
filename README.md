@@ -3,7 +3,7 @@
 `retail-weather-etl` is a local-first ETL project that combines retail sales and daily weather data to produce a clean analytical model in DuckDB and publish business-ready gold outputs in Parquet. The pipeline covers the full flow from raw ingestion and profiling to cleaning, quality validation, SQL modeling, lineage, and optional Airflow orchestration.
 
 <p align="center">
-  <img src="docs/images/architecture.png" alt="Architecture" width="560">
+  <img src="docs/images/data_flow.png" alt="Data flow" width="560">
 </p>
 
 The project is designed to be easy to run and easy to inspect. The README stays executive on purpose: key commands live here, architecture and operational decisions live in `docs/`, and dataset-level guarantees live in the data contract. Module-level implementation detail belongs in the code docstrings.
@@ -156,7 +156,7 @@ Core gold datasets:
 
 ## Diagrams
 
-- [Architecture diagram](docs/images/architecture.png)
+- [Data flow diagram](docs/images/data_flow.png)
 - [Data layers diagram](docs/images/data_layers.png)
 - [Local execution flow](docs/images/local_execution_flow.png)
 - [Airflow orchestrated flow](docs/images/airflow_orchestrated_flow.png)
