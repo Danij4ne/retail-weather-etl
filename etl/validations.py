@@ -713,7 +713,9 @@ def enforce_quality_report(report: QualityReport) -> QualityReport:
         return report
 
     failures = report.get("critical_failures") or []
-    detail = "; ".join(str(item) for item in failures) if failures else str(
-        report.get("status")
+    detail = (
+        "; ".join(str(item) for item in failures)
+        if failures
+        else str(report.get("status"))
     )
     raise QualityGateError(f"CRITICAL quality gate failed: {detail}", report)
