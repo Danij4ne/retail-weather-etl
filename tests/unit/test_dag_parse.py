@@ -32,7 +32,7 @@ def test_airflow_dag_parses_and_has_expected_tasks():
     assert dag_bag.import_errors == {}
     assert "retail_weather_etl" in dag_bag.dags
 
-    dag = dag_bag.get_dag("retail_weather_etl")
+    dag = dag_bag.dags["retail_weather_etl"]
     assert dag is not None
     assert {"extract", "transform", "load", "cleanup"}.issubset(dag.task_dict.keys())
     assert "cleanup" in dag.task_dict["load"].downstream_task_ids
