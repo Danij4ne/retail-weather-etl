@@ -104,7 +104,7 @@ jobs:
         run: uv sync --locked --no-default-groups --group security
 
       - name: Run Bandit
-        run: uv run bandit -r etl pipelines dags -q -f json -o bandit-report.json
+        run: uv run --no-sync bandit -r etl pipelines dags -q -f json -o bandit-report.json
 
       - name: Upload Bandit report
         if: always()
