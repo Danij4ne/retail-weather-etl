@@ -1,8 +1,15 @@
+from typing import cast
+
 import pandas as pd
 import pytest
 
 from etl.settings import clear_settings_cache
-from etl.validations import QualityGateError, enforce_quality_report, post_clean_checks
+from etl.validations import (
+    QualityGateError,
+    QualityReport,
+    enforce_quality_report,
+    post_clean_checks,
+)
 
 
 @pytest.fixture(autouse=True)
@@ -312,23 +319,29 @@ def test_post_clean_checks_raises_when_weather_date_is_null(
 
 
 def test_enforce_quality_report_returns_passing_report():
-    report = {
-        "status": "passed",
-        "critical_failures": [],
-        "warnings": [],
-        "metrics": {},
-    }
+    report = cast(
+        QualityReport,
+        {
+            "status": "passed",
+            "critical_failures": [],
+            "warnings": [],
+            "metrics": {},
+        },
+    )
 
     assert enforce_quality_report(report) is report
 
 
 def test_enforce_quality_report_raises_when_status_is_not_passed():
-    report = {
-        "status": "failed",
-        "critical_failures": ["duplicated sale_id"],
-        "warnings": [],
-        "metrics": {},
-    }
+    report = cast(
+        QualityReport,
+        {
+            "status": "failed",
+            "critical_failures": ["duplicated sale_id"],
+            "warnings": [],
+            "metrics": {},
+        },
+    )
 
     with pytest.raises(QualityGateError, match="duplicated sale_id") as exc_info:
         enforce_quality_report(report)
