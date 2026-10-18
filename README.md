@@ -84,7 +84,8 @@ uv run ruff check .
 uv run black --check .
 uv run mypy
 uv run bandit -r etl pipelines dags
-uv run pip-audit
+uv sync --locked --no-default-groups --group security
+uv run --no-sync pip-audit
 ```
 
 These checks complement the test suite:
