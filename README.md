@@ -34,6 +34,12 @@ Revenue in `fact_sales` and `weather_sales_mart` uses the current cleaned produc
 
 Invalid sales are not silently dropped. The pipeline splits sales into clean and rejected outputs and publishes explicit `reject_reasons` for rows that fail business or relational rules. Gold models only use the clean sales contract, while rejected rows remain available for audit and root-cause analysis.
 
+<p align="center">
+  <img src="docs/images/results/sales_reject_reasons.png" alt="Rejected sales by reason">
+</p>
+
+A rejected sale can carry more than one reason, so these counts are reason occurrences, not unique sales. In this run, 371 occurrences come from 332 rejected rows. The most common reason is `unknown_product_id`.
+
 The mart is stricter than the fact table. `fact_sales` keeps otherwise valid sales even when weather is missing or price is unusable, because coverage gaps should remain visible. `weather_sales_mart` excludes rows whose customer city is still unknown, because the mart is explicitly city-grained and those rows cannot be aggregated honestly at that level.
 
 ## What It Publishes
@@ -49,6 +55,12 @@ Main published datasets today are:
 - `weather_sales_mart`
 
 The main analytical mart is `weather_sales_mart`, published at the grain of one row per `sale_date`, `city`, and `category`. It is designed to support analysis of sales behavior under different weather conditions.
+
+<p align="center">
+  <img src="docs/images/results/weather_sales_by_condition.png" alt="Sales by city, category, and weather">
+</p>
+
+This sample sums `weather_sales_mart` across days. Rows that share a city, category, and weather bucket become one line, so `sale_date` is not shown. The source data is synthetic. `estimated_revenue` uses the current catalog price at refresh time, not a historical sale price.
 
 The published contract for grain, metrics, compatibility rules, and validation expectations is in [docs/DATA_CONTRACT.md](docs/DATA_CONTRACT.md).
 
